@@ -1,0 +1,10 @@
+{
+	"SendAReport": "Einen Vorfall melden",
+	"ReportHasBeenSentSuccessfully": "Der Bericht wurde erfolgreich gesendet",
+	"SubmitReport": "Bericht senden",
+	"YourReportIsAnonymousText": "Sie können hier einen anonymen Whistleblower-Bericht an das Legal Compliance-Team Ihres Unternehmens senden. Ihre Meldung bleibt anonym.",
+	"WhatWouldYouLikeToReport": "Was möchten Sie melden?",
+	"DescribeDetailsIssueYouAreReporting": "Bitte beschreiben Sie den Vorfall im Detail.",
+	"RightsAndObligationsDescription": "Als Person, die schwerwiegendes Fehlverhalten in einem Unternehmen meldet, haben Sie nach dem Gesetz Rechte und Pflichten.",
+	"WhistleblowingDescription": "Wir empfehlen Ihnen, die für Sie geltenden Rechte und Pflichten im Hinblick auf die geltenden nationalen Rechtsvorschriften für <comp>diese Seite</comp> zu klären. Beachten Sie, dass neben den hier aufgeführten Rechtsvorschriften möglicherweise weitere Gesetze gelten."
+}

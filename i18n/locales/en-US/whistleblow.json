@@ -1,0 +1,10 @@
+{
+	"SendAReport": "Report an incident",
+	"ReportHasBeenSentSuccessfully": "Report has been sent successfully",
+	"SubmitReport": "Submit report",
+	"YourReportIsAnonymousText": "Here you can submit an anonymous whistleblower report to your company's legal compliance team. Your report is anonymous.",
+	"WhatWouldYouLikeToReport": "What would you like to report?",
+	"DescribeDetailsIssueYouAreReporting": "Please describe the incident in detail.",
+	"RightsAndObligationsDescription": "As a person reporting serious misconduct in a business, you have rights and obligations under the law.",
+	"WhistleblowingDescription": "We recommend that you investigate the rights and obligations that apply specifically to you by referring to national legislation on <comp>this page</comp>. Note that further legislation can exist beyond the ones listed here."
+}

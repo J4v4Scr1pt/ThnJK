@@ -1,0 +1,10 @@
+{
+	"SendAReport": "Rapporter en hændelse",
+	"ReportHasBeenSentSuccessfully": "Rapport er blevet sendt",
+	"SubmitReport": "Indsend rapport",
+	"YourReportIsAnonymousText": "Her kan du indsende en anonym whistleblower-rapport til din virksomheds juridiske compliance-team. Din rapport er anonym",
+	"WhatWouldYouLikeToReport": "Hvad vil du gerne rapportere?",
+	"DescribeDetailsIssueYouAreReporting": "Beskriv venligst hændelsen i detaljer.",
+	"RightsAndObligationsDescription": "Som person, der anmelder alvorlige forseelser i en virksomhed, har du rettigheder og forpligtelser i henhold til loven.",
+	"WhistleblowingDescription": "Vi anbefaler, at du undersøger de rettigheder og forpligtelser, der specifikt gælder for dig, ved at henvise til national lovgivning vedr. <comp>denne side</comp>. Bemærk, at der kan eksistere yderligere lovgivning ud over den, der er anført her."
+}
