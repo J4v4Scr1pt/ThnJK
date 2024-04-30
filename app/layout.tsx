@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
-import { TanstackProvider } from './providers/TanstackProvider';
+// import { TanstackProvider } from './providers/TanstackProvider';
 import { NextuiProvider } from './providers/NextuiProvider';
 import Header from '@/components/Navigation/Header';
 import { NextThemesProvider } from './providers/NextThemesProvider';
@@ -22,17 +22,17 @@ export default function RootLayout({
 }>) {
 	// const locale = getLocale();
 	return (
-		<html lang={'en-US'}>
+		<html lang={'sv-SE'}>
 			<body className={inter.className}>
 				{/* <LocaleProvider value={locale}> */}
-				<TanstackProvider>
-					<NextuiProvider>
-						<NextThemesProvider>
-							<Header />
-							<main>{children}</main>
-						</NextThemesProvider>
-					</NextuiProvider>
-				</TanstackProvider>
+				{/* <TanstackProvider> */}
+				<NextuiProvider>
+					<NextThemesProvider>
+						<Header />
+						<main>{children}</main>
+					</NextThemesProvider>
+				</NextuiProvider>
+				{/* </TanstackProvider> */}
 				{/* </LocaleProvider> */}
 			</body>
 		</html>

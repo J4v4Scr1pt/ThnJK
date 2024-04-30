@@ -32,7 +32,7 @@ export default function NavbarComp() {
 			classNames={{
 				base: 'lg:bg-transparent lg:backdrop-filter-none',
 				item: 'data-[active=true]:text-primary',
-				wrapper: 'px-4 sm:px-6',
+				wrapper: 'px-4 sm:px-6 w-screen sm:max-w-fit',
 			}}
 			height="60px">
 			<NavbarBrand>
@@ -45,27 +45,42 @@ export default function NavbarComp() {
 				justify="start">
 				<NavbarItem>
 					<Link className="flex gap-2 text-inherit" href="#">
-						Dashboard
+						Information
 					</Link>
 				</NavbarItem>
 				<NavbarItem isActive>
 					<Link aria-current="page" className="flex gap-2 text-inherit" href="#">
-						Deployments
+						Medlemskap
 					</Link>
 				</NavbarItem>
 				<NavbarItem>
 					<Link className="flex gap-2 text-inherit" href="#">
-						Analytics
+						Träningstider
 					</Link>
 				</NavbarItem>
 				<NavbarItem>
 					<Link className="flex gap-2 text-inherit" href="#">
-						Team
+						Tävlingskalender
 					</Link>
 				</NavbarItem>
 				<NavbarItem>
 					<Link className="flex gap-2 text-inherit" href="#">
-						Settings
+						Stor & Liten
+					</Link>
+				</NavbarItem>
+				<NavbarItem>
+					<Link className="flex gap-2 text-inherit" href="#">
+						Falltryghet för äldre
+					</Link>
+				</NavbarItem>
+				<NavbarItem>
+					<Link className="flex gap-2 text-inherit" href="#">
+						Kontakt och faktauppgifter
+					</Link>
+				</NavbarItem>
+				<NavbarItem>
+					<Link className="flex gap-2 text-inherit" href="#">
+						Föreninsdokument
 					</Link>
 				</NavbarItem>
 			</NavbarContent>
@@ -77,7 +92,7 @@ export default function NavbarComp() {
 						<Icon className="text-default-500" icon="solar:magnifer-linear" width={22} />
 					</Button>
 				</NavbarItem>
-				<NavbarItem className="hidden sm:flex">
+				<NavbarItem className="flex">
 					<ThemeSwitcher />
 				</NavbarItem>
 				<NavbarItem className="hidden sm:flex">
@@ -142,27 +157,42 @@ export default function NavbarComp() {
 			<NavbarMenu>
 				<NavbarMenuItem>
 					<Link className="w-full" color="foreground" href="#">
-						Dashboard
+						Information
 					</Link>
 				</NavbarMenuItem>
 				<NavbarMenuItem isActive>
 					<Link aria-current="page" className="w-full" color="primary" href="#">
-						Deployments
+						Medlemskap
 					</Link>
 				</NavbarMenuItem>
 				<NavbarMenuItem>
 					<Link className="w-full" color="foreground" href="#">
-						Analytics
+						Träningstider
 					</Link>
 				</NavbarMenuItem>
 				<NavbarMenuItem>
 					<Link className="w-full" color="foreground" href="#">
-						Team
+						Tävlingskalender
 					</Link>
 				</NavbarMenuItem>
 				<NavbarMenuItem>
 					<Link className="w-full" color="foreground" href="#">
-						Settings
+						Stor & Liten
+					</Link>
+				</NavbarMenuItem>
+				<NavbarMenuItem>
+					<Link className="w-full" color="foreground" href="#">
+						Falltryghet för äldre
+					</Link>
+				</NavbarMenuItem>
+				<NavbarMenuItem>
+					<Link className="w-full" color="foreground" href="#">
+						Kontakt och faktauppgifter
+					</Link>
+				</NavbarMenuItem>
+				<NavbarMenuItem>
+					<Link className="w-full" color="foreground" href="#">
+						Föreningsdokument
 					</Link>
 				</NavbarMenuItem>
 			</NavbarMenu>
