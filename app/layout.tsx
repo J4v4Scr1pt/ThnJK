@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
 	// const locale = getLocale();
 	return (
-		<html lang={'sv-SE'}>
+		<html lang={'sv-SE'} suppressHydrationWarning>
 			<body className={inter.className}>
 				{/* <LocaleProvider value={locale}> */}
 				{/* <TanstackProvider> */}
