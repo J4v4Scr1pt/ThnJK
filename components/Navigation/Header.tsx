@@ -20,34 +20,33 @@ import {
 	PopoverTrigger,
 	Avatar,
 	Badge,
+	Accordion,
+	AccordionItem,
 } from '@nextui-org/react';
 import { Icon } from '@iconify/react';
 import NotificationsCard from './NotificationsCard';
 import { TjkIcon } from './TjkIcon';
 import ThemeSwitcher from '../ThemeSwitcher';
+import { DropDown } from './Dropdown';
 
 export default function NavbarComp() {
 	return (
 		<Navbar
 			classNames={{
-				base: 'lg:bg-transparent lg:backdrop-filter-none',
+				base: 'lg:bg-transparent lg:backdrop-filter-none max-w-full',
 				item: 'data-[active=true]:text-primary',
-				wrapper: 'px-4 sm:px-6 w-screen sm:max-w-fit',
+				wrapper: 'px-4 sm:px-6 w-screen max-w-full',
 			}}
 			height="60px">
-			<NavbarBrand>
+			<NavbarBrand className="flex-grow-0">
 				<NavbarMenuToggle className="mr-2 h-6 sm:hidden" />
 				<TjkIcon />
 				<p className="font-bold text-inherit">TJK</p>
 			</NavbarBrand>
 			<NavbarContent
 				className="ml-4 hidden h-12 w-full max-w-fit gap-4 rounded-full bg-content2 px-4 dark:bg-content1 sm:flex"
-				justify="start">
-				<NavbarItem>
-					<Link className="flex gap-2 text-inherit" href="#">
-						Information
-					</Link>
-				</NavbarItem>
+				justify="center">
+				<DropDown />
 				<NavbarItem isActive>
 					<Link aria-current="page" className="flex gap-2 text-inherit" href="#">
 						Medlemskap
@@ -73,11 +72,11 @@ export default function NavbarComp() {
 						Falltryghet för äldre
 					</Link>
 				</NavbarItem>
-				<NavbarItem>
+				{/* <NavbarItem>
 					<Link className="flex gap-2 text-inherit" href="#">
 						Kontakt och faktauppgifter
 					</Link>
-				</NavbarItem>
+				</NavbarItem> */}
 				<NavbarItem>
 					<Link className="flex gap-2 text-inherit" href="#">
 						Föreninsdokument
@@ -85,7 +84,7 @@ export default function NavbarComp() {
 				</NavbarItem>
 			</NavbarContent>
 			<NavbarContent
-				className="ml-auto flex h-12 max-w-fit items-center gap-0 rounded-full p-0 lg:bg-content2 lg:px-1 lg:dark:bg-content1"
+				className="flex h-12 max-w-fit items-center gap-0 rounded-full p-0 lg:bg-content2 lg:px-1 lg:dark:bg-content1"
 				justify="end">
 				<NavbarItem className="hidden sm:flex">
 					<Button isIconOnly radius="full" variant="light">
@@ -156,9 +155,25 @@ export default function NavbarComp() {
 			{/* Mobile Menu */}
 			<NavbarMenu>
 				<NavbarMenuItem>
-					<Link className="w-full" color="foreground" href="#">
-						Information
-					</Link>
+					<Accordion className="p-0" itemClasses={{ title: 'font-normal text-medium' }}>
+						<AccordionItem title="Information" classNames={{ trigger: 'p-0' }}>
+							<Link className="w-full" color="foreground" href="#">
+								Om klubben
+							</Link>
+							<Link className="w-full" color="foreground" href="#">
+								Vad är Judo/Länkar
+							</Link>
+							<Link className="w-full" color="foreground" href="#">
+								Policys avseende avgifter och ledare vid läger och tävling
+							</Link>
+							<Link className="w-full" color="foreground" href="#">
+								Vaccinerad Klubb
+							</Link>
+							<Link className="w-full" color="foreground" href="#">
+								Inkluderings och jämställdhetsplan
+							</Link>
+						</AccordionItem>
+					</Accordion>
 				</NavbarMenuItem>
 				<NavbarMenuItem isActive>
 					<Link aria-current="page" className="w-full" color="primary" href="#">
