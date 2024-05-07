@@ -1,5 +1,5 @@
 'use client';
-import { Switch } from '@nextui-org/react';
+import { Skeleton, Switch } from '@nextui-org/react';
 import { useTheme } from 'next-themes';
 import { Icon } from '@iconify/react';
 import { useEffect, useState } from 'react';
@@ -12,7 +12,7 @@ export default function ThemeSwitcher() {
 		setMounted(true);
 	}, []);
 
-	if (!mounted) return null;
+	if (!mounted) return <Skeleton className="h-8 w-14 rounded-full" />;
 
 	return (
 		<Switch

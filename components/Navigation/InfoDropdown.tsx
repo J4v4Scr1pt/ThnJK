@@ -3,7 +3,7 @@ import { NavbarItem } from '@nextui-org/navbar';
 import { Button } from '@nextui-org/button';
 import { Icon } from '@iconify/react';
 
-export function DropDown() {
+export function InfoDropdown() {
 	const icons = {
 		chevron: <Icon className="text-default-500" icon="solar:alt-arrow-down-linear" width={24} />,
 		docs: <Icon className="text-primary-500" icon="solar:document-text-outline" width={24} />,

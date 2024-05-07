@@ -1,6 +1,5 @@
 'use client';
 
-import React from 'react';
 import {
 	Navbar,
 	NavbarBrand,
@@ -10,28 +9,23 @@ import {
 	NavbarMenuItem,
 	NavbarMenuToggle,
 	Link,
-	Button,
 	Dropdown,
 	DropdownTrigger,
 	DropdownMenu,
 	DropdownItem,
-	Popover,
-	PopoverContent,
-	PopoverTrigger,
 	Avatar,
 	Badge,
 	Accordion,
 	AccordionItem,
 } from '@nextui-org/react';
-import { Icon } from '@iconify/react';
-import NotificationsCard from './NotificationsCard';
 import { TjkIcon } from './TjkIcon';
 import ThemeSwitcher from '../ThemeSwitcher';
-import { DropDown } from './Dropdown';
+import { InfoDropdown } from './InfoDropdown';
 
 export default function NavbarComp() {
 	return (
 		<Navbar
+			className="header"
 			classNames={{
 				base: 'lg:bg-transparent lg:backdrop-filter-none max-w-full',
 				item: 'data-[active=true]:text-primary',
@@ -46,7 +40,7 @@ export default function NavbarComp() {
 			<NavbarContent
 				className="ml-4 hidden h-12 w-full max-w-fit gap-4 rounded-full bg-content2 px-4 dark:bg-content1 sm:flex"
 				justify="center">
-				<DropDown />
+				<InfoDropdown />
 				<NavbarItem isActive>
 					<Link aria-current="page" className="flex gap-2 text-inherit" href="#">
 						Medlemskap
@@ -84,41 +78,12 @@ export default function NavbarComp() {
 				</NavbarItem>
 			</NavbarContent>
 			<NavbarContent
-				className="flex h-12 max-w-fit items-center gap-0 rounded-full p-0 lg:bg-content2 lg:px-1 lg:dark:bg-content1"
-				justify="end">
-				<NavbarItem className="hidden sm:flex">
-					<Button isIconOnly radius="full" variant="light">
-						<Icon className="text-default-500" icon="solar:magnifer-linear" width={22} />
-					</Button>
-				</NavbarItem>
+				className="flex h-12 max-w-fit items-center justify-between gap-0 rounded-full px-3 lg:bg-content2 lg:px-3 lg:dark:bg-content1"
+				justify="center">
 				<NavbarItem className="flex">
 					<ThemeSwitcher />
 				</NavbarItem>
-				<NavbarItem className="hidden sm:flex">
-					<Button isIconOnly radius="full" variant="light">
-						<Icon className="text-default-500" icon="solar:settings-linear" width={24} />
-					</Button>
-				</NavbarItem>
-				<NavbarItem className="flex">
-					<Popover offset={12} placement="bottom-end">
-						<PopoverTrigger>
-							<Button
-								disableRipple
-								isIconOnly
-								className="overflow-visible"
-								radius="full"
-								variant="light">
-								<Badge color="danger" content="5" showOutline={false} size="md">
-									<Icon className="text-default-500" icon="solar:bell-linear" width={22} />
-								</Badge>
-							</Button>
-						</PopoverTrigger>
-						<PopoverContent className="max-w-[90vw] p-0 sm:max-w-[380px]">
-							<NotificationsCard className="w-full shadow-none" />
-						</PopoverContent>
-					</Popover>
-				</NavbarItem>
-				<NavbarItem className="px-2">
+				<NavbarItem className="ml-2">
 					<Dropdown placement="bottom-end">
 						<DropdownTrigger>
 							<button className="mt-1 h-8 w-8 outline-none transition-transform">

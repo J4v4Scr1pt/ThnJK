@@ -5,5 +5,9 @@ import { useRouter } from 'next/navigation';
 
 export function NextuiProvider({ children }: { children: React.ReactNode }) {
 	const router = useRouter();
-	return <NextUIProvider navigate={router.push}>{children}</NextUIProvider>;
+	return (
+		<NextUIProvider className="main-page-layout" navigate={router.push}>
+			{children}
+		</NextUIProvider>
+	);
 }
