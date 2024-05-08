@@ -5,7 +5,7 @@
 @layer components {
 	.main-page-layout {
 		display: grid;
-		grid-template: 60px calc(100vh - 300px) 240px / 100vw;
+		grid-template: 60px calc(100vh - 236px) 176px / 100vw;
 		grid-template-areas:
 			'header'
 			'main-content'
@@ -28,6 +28,17 @@
 		position: relative;
 		grid-area: main-content;
 		scroll-behavior: smooth;
+	}
+
+	@media (max-width: 640px) {
+		.main-page-layout {
+			display: grid;
+			grid-template: 60px calc(100vh - 218px) 158px / 100vw;
+			grid-template-areas:
+				'header'
+				'main-content'
+				'footer';
+		}
 	}
 
 	::-webkit-scrollbar {

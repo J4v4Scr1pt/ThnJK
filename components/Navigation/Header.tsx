@@ -94,7 +94,10 @@ export default function NavbarComp() {
 									placement="bottom-right"
 									shape="circle"
 									size="sm">
-									<Avatar size="sm" src="https://i.pravatar.cc/150?u=a04258114e29526708c" />
+									<Avatar
+										size="sm"
+										src="https://t4.ftcdn.net/jpg/01/53/91/51/360_F_153915143_Uc6ryraafkZMONgDzCIGyYX8nCTuLVyg.jpg"
+									/>
 								</Badge>
 							</button>
 						</DropdownTrigger>

@@ -30,7 +30,7 @@ export default function RootLayout({
 				<NextuiProvider>
 					<NextThemesProvider>
 						<Header />
-						<main className="main-content ml-auto mr-auto  p-8">{children}</main>
+						<main className="main-content ml-auto mr-auto p-8">{children}</main>
 						<Footer />
 					</NextThemesProvider>
 				</NextuiProvider>
