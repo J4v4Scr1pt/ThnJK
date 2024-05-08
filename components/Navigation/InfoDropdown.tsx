@@ -18,7 +18,7 @@ export function InfoDropdown() {
 				<DropdownTrigger>
 					<Button
 						disableRipple
-						className="bg-transparent p-0 data-[hover=true]:bg-transparent"
+						className="bg-transparent p-0 text-medium text-inherit data-[hover=true]:bg-transparent"
 						endContent={icons.chevron}
 						radius="sm"
 						variant="light">
