@@ -2,43 +2,11 @@
 
 import type { IconProps } from '@iconify/react';
 
-import React from 'react';
 import { Link, Spacer } from '@nextui-org/react';
 import { Icon } from '@iconify/react';
 import { ScrollingSponsors } from '../ScrollingSponsors/ScrollingSponsors';
 
 type SocialIconProps = Omit<IconProps, 'icon'>;
-
-const navLinks = [
-	{
-		name: 'Home',
-		href: '#',
-	},
-	{
-		name: 'About',
-		href: '#',
-	},
-	{
-		name: 'Services',
-		href: '#',
-	},
-	{
-		name: 'Projects',
-		href: '#',
-	},
-	{
-		name: 'Contact',
-		href: '#',
-	},
-	{
-		name: 'Blog',
-		href: '#',
-	},
-	{
-		name: 'Careers',
-		href: '#',
-	},
-];
 
 const socialItems = [
 	{
@@ -63,24 +31,9 @@ export function Footer() {
 		<footer className="footer sticky bottom-0 flex h-full w-full flex-col bg-content1">
 			<div className="mx-auto flex h-full w-full  flex-col items-center justify-center p-2 pt-3 lg:mx-0">
 				<div className="flex items-center justify-center">
-					<span className="text-small font-medium sm:text-medium">
-						Trollhättans JK&apos;s sponsorer
-					</span>
+					<span className="text-small font-medium sm:text-medium">Våra sponsorer</span>
 				</div>
 				<Spacer y={1} />
-				{/* <div className="flex flex-wrap justify-center gap-x-4 gap-y-1">
-					{navLinks.map((item) => (
-						<Link
-							key={item.name}
-							isExternal
-							className="text-default-500"
-							href={item.href}
-							size="sm">
-							{item.name}
-						</Link>
-					))}
-				</div> */}
-				{/* <Spacer y={6} /> */}
 				<ScrollingSponsors />
 				<Spacer y={4} />
 				<div className="flex justify-center gap-x-4">

@@ -1,10 +1,9 @@
 'use client';
 
 import type { ScrollShadowProps } from '@nextui-org/react';
-
-import React from 'react';
 import { ScrollShadow } from '@nextui-org/react';
 import { cn } from '@/utils/cn';
+import { Children, cloneElement, forwardRef } from 'react';
 
 interface ScrollingBannerProps extends React.HTMLAttributes<HTMLDivElement> {
 	isReverse?: boolean;
@@ -15,7 +14,7 @@ interface ScrollingBannerProps extends React.HTMLAttributes<HTMLDivElement> {
 	duration?: number; // in seconds
 }
 
-const ScrollingBanner = React.forwardRef<HTMLDivElement, ScrollingBannerProps>(
+const ScrollingBanner = forwardRef<HTMLDivElement, ScrollingBannerProps>(
 	(
 		{
 			className,
@@ -67,7 +66,7 @@ const ScrollingBanner = React.forwardRef<HTMLDivElement, ScrollingBannerProps>(
 						'[animation-direction:reverse]': isReverse,
 						'hover:[animation-play-state:paused]': shouldPauseOnHover,
 					})}>
-					{React.Children.map(children, (child) => React.cloneElement(child as any))}
+					{Children.map(children, (child) => cloneElement(child as any))}
 				</div>
 			</ScrollShadow>
 		);
