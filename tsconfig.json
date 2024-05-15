@@ -10,7 +10,7 @@
 		"esModuleInterop": true,
 		"module": "esnext",
 		"noUncheckedIndexedAccess": true,
-		"moduleResolution": "node",
+		"moduleResolution": "Bundler",
 		"resolveJsonModule": true,
 		"isolatedModules": true,
 		"jsx": "preserve",

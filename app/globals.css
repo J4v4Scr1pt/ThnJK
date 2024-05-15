@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer components {
-	.main-page-layout {
+	/* .main-page-layout {
 		display: grid;
 		grid-template: 60px calc(100vh - 236px) 176px / 100vw;
 		grid-template-areas:
@@ -25,7 +25,6 @@
 			overflow: overlay;
 		}
 		overflow: auto;
-		position: relative;
 		grid-area: main-content;
 		scroll-behavior: smooth;
 	}
@@ -39,7 +38,7 @@
 				'main-content'
 				'footer';
 		}
-	}
+	} */
 
 	::-webkit-scrollbar {
 		width: 16px;

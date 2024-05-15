@@ -26,9 +26,9 @@ export const HeroHighlight = ({
 				containerClassName
 			)}
 			onMouseMove={handleMouseMove}>
-			<div className="bg-dot-thick-neutral-300 dark:bg-dot-thick-neutral-800 pointer-events-none absolute  inset-0" />
+			<div className="pointer-events-none absolute inset-0 bg-dot-thick-neutral-300  dark:bg-dot-thick-neutral-800" />
 			<motion.div
-				className="bg-dot-thick-indigo-500 dark:bg-dot-thick-indigo-500 pointer-events-none   absolute inset-0 opacity-0 transition duration-300 group-hover:opacity-100"
+				className="pointer-events-none absolute inset-0 opacity-0 transition duration-300 bg-dot-thick-indigo-500 group-hover:opacity-100 dark:bg-dot-thick-indigo-500"
 				style={{
 					WebkitMaskImage: useMotionTemplate`
             radial-gradient(
@@ -48,7 +48,6 @@ export const HeroHighlight = ({
 			/>
 
 			<div className={cn('relative z-20', className)}>
-				{' '}
 				<motion.h1
 					initial={{
 						opacity: 0,
@@ -62,9 +61,9 @@ export const HeroHighlight = ({
 						duration: 0.5,
 						ease: [0.4, 0.0, 0.2, 1],
 					}}
-					className="mx-auto max-w-5xl px-4 text-center text-2xl font-bold leading-relaxed text-neutral-700 dark:text-white md:text-4xl lg:text-5xl lg:leading-snug ">
+					className="mx-auto max-w-5xl px-4 text-center text-lg font-bold leading-relaxed text-neutral-700 dark:text-white md:text-4xl lg:text-5xl lg:leading-snug ">
 					Välkommen till <br />
-					<Highlight className="text-xl text-black dark:text-white sm:text-6xl">
+					<Highlight className="text-lg text-black dark:text-white sm:text-6xl">
 						Trollhättans Judoklubb!
 					</Highlight>
 				</motion.h1>
@@ -93,7 +92,7 @@ export const Highlight = ({ children, className }: { children: React.ReactNode; 
 				display: 'inline',
 			}}
 			className={cn(
-				`relative inline-block rounded-lg  bg-gradient-to-r from-indigo-300 to-purple-300 px-1 pb-1 dark:from-indigo-500 dark:to-purple-500`,
+				`relative inline-block rounded-lg bg-gradient-to-r from-indigo-300 to-purple-300 px-1 pb-1 dark:from-indigo-500 dark:to-purple-500`,
 				className
 			)}>
 			{children}
