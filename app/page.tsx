@@ -21,7 +21,7 @@ export default function Home() {
 	});
 
 	return (
-		<ReactLenis root className="h-screen overflow-scroll">
+		<ReactLenis root className="h-screen">
 			<HeroSection />
 			<Section
 				image={medaljerTT}
