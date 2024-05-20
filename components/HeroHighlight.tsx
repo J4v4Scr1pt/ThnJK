@@ -22,7 +22,7 @@ export const HeroHighlight = ({
 	return (
 		<div
 			className={cn(
-				'group relative flex h-32 w-full items-center justify-center bg-white dark:bg-black sm:h-60',
+				'group relative flex h-24 w-full items-center justify-center bg-white dark:bg-black sm:h-40',
 				containerClassName
 			)}
 			onMouseMove={handleMouseMove}>
@@ -47,7 +47,7 @@ export const HeroHighlight = ({
 				}}
 			/>
 
-			<div className={cn('relative z-20', className)}>
+			<div className={cn('relative z-20 pb-4', className)}>
 				<motion.h1
 					initial={{
 						opacity: 0,

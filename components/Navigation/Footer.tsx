@@ -27,7 +27,7 @@ const socialItems = [
 	{
 		name: 'Smoothcomp',
 		href: 'https://smoothcomp.com/sv/club/24133',
-		icon: (props: SocialIconProps) => (
+		icon: () => (
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				aria-hidden="true"

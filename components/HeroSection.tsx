@@ -11,7 +11,7 @@ export function HeroSection() {
 				</video>
 			</div>
 			<HeroHighlight />
-			<div className="inset-0 m-auto flex flex-col items-center">
+			<div className="inset-0 m-auto flex flex-col items-center text-white">
 				<h1 className="max-w-[15ch] text-3xl uppercase sm:text-6xl">Trollträffen</h1>
 				<div className="mt-3 flex  w-full max-w-[900px] justify-between">
 					<ItemHighlight title="Ungdomarnas" desc="Stolta barn" />
