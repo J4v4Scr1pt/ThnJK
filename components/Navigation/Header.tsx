@@ -33,12 +33,12 @@ export default function NavbarComp() {
 			}}
 			height="60px">
 			<NavbarBrand className="flex-grow-0">
-				<NavbarMenuToggle className="mr-2 h-6 sm:hidden" />
+				<NavbarMenuToggle className="mr-2 h-6 lg:hidden" />
 				<TjkIcon />
 				<p className="font-bold text-inherit">TJK</p>
 			</NavbarBrand>
 			<NavbarContent
-				className="ml-4 hidden h-12 w-full max-w-fit gap-4 rounded-full bg-content2 px-4 dark:bg-content1 sm:flex"
+				className="ml-4 hidden h-12 w-full max-w-fit gap-4 rounded-full bg-content2 px-4 dark:bg-content1 lg:flex"
 				justify="center">
 				<InfoDropdown />
 				<NavbarItem isActive>

@@ -21,7 +21,7 @@ export default function Home() {
 	});
 
 	return (
-		<ReactLenis root className="h-screen">
+		<ReactLenis root>
 			<HeroSection />
 			<Section
 				image={medaljerTT}

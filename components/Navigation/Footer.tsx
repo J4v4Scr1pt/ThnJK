@@ -24,11 +24,16 @@ const socialItems = [
 		href: 'https://www.tiktok.com/@trollhattansjudo',
 		icon: (props: SocialIconProps) => <Icon {...props} icon="ic:outline-tiktok" />,
 	},
+	// {
+	// 	name: 'Smoothcomp',
+	// 	href: 'https://smoothcomp.com/sv/club/24133',
+	// 	icon: (props: SocialIconProps) => (	),
+	// },
 ];
 
 export function Footer() {
 	return (
-		<footer className="footer sticky bottom-0 flex h-full w-full flex-col bg-content1">
+		<footer className="footer sticky bottom-0 flex h-auto flex-col bg-content1">
 			<div className="mx-auto flex h-full w-full  flex-col items-center justify-center p-2 pt-3 lg:mx-0">
 				<div className="flex items-center justify-center">
 					<span className="text-small font-medium sm:text-medium">Våra sponsorer</span>

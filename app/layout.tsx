@@ -23,19 +23,15 @@ export default function RootLayout({
 }>) {
 	// const locale = getLocale();
 	return (
-		<html lang={'sv-SE'} suppressHydrationWarning className="overflow-hidden">
+		<html lang={'sv-SE'} suppressHydrationWarning>
 			<body className={inter.className}>
-				{/* <LocaleProvider value={locale}> */}
-				{/* <TanstackProvider> */}
 				<NextuiProvider>
 					<NextThemesProvider>
 						<Header />
-						<main className="main-content">{children}</main>
+						<main className="main-content min-h-screen">{children}</main>
 						<Footer />
 					</NextThemesProvider>
 				</NextuiProvider>
-				{/* </TanstackProvider> */}
-				{/* </LocaleProvider> */}
 			</body>
 		</html>
 	);
