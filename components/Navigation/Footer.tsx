@@ -24,11 +24,27 @@ const socialItems = [
 		href: 'https://www.tiktok.com/@trollhattansjudo',
 		icon: (props: SocialIconProps) => <Icon {...props} icon="ic:outline-tiktok" />,
 	},
-	// {
-	// 	name: 'Smoothcomp',
-	// 	href: 'https://smoothcomp.com/sv/club/24133',
-	// 	icon: (props: SocialIconProps) => (	),
-	// },
+	{
+		name: 'Smoothcomp',
+		href: 'https://smoothcomp.com/sv/club/24133',
+		icon: (props: SocialIconProps) => (
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				aria-hidden="true"
+				role="img"
+				className="size-5"
+				width="1em"
+				height="1em"
+				viewBox="0 0 512 512">
+				<path
+					fill="currentColor"
+					d="M110 19.2c-43.2 11.2-80 48.4-91 91.8-4.4 17.6-4.4 272.4 0 290 11.2 43.8 48.2 81 92 92 17.6 4.4 272.4 4.4 290 0 43.4-11 81-48.6 92-92 4.6-18 4.4-272.4 0-290-11.4-44-48.4-81-92-92-17.2-4.4-274.2-4.2-291 0.2zM403 70.8c15.4 7.6 30.6 22.8 38.2 38.2l5.8 12v270l-5.8 12c-7.6 15.4-22.8 30.6-38.2 38.2l-12 5.8h-270l-11.6-5.4c-14.6-7-31-23.2-38.6-38.6l-5.8-12v-270l4.6-9.8c9.2-20 27-36.6 47.4-43.6 9.2-3.2 20.6-3.4 142-3l132 0.4 12 5.8z"></path>
+				<path
+					fill="currentColor"
+					d="M155.4 125.2c-13.4 4.2-26.2 17.2-30.2 31-4.8 15.6-4.8 184 0 199.6 4.2 14.4 16.6 26.8 31 31 15.6 4.8 184 4.8 199.6 0 14.4-4.2 26.8-16.6 31-31 4.8-15.6 4.8-184 0-199.6-4.2-14.4-16.6-26.8-31-31-15.2-4.6-185.8-4.4-200.4 0zM340 256v84h-168v-168h168v84z"></path>
+			</svg>
+		),
+	},
 ];
 
 export function Footer() {
