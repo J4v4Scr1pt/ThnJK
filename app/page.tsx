@@ -12,6 +12,7 @@ import ungdomarTT from '@/../public/images/ungdomarTT.jpg';
 import barnThn from '@/../public/images/barnThn.jpg';
 import traningThn from '@/../public/images/traningThn.jpg';
 import lillaTT from '@/../public/images/lillaTT.jpg';
+import ZoomSection from '@/components/ZoomSection';
 
 export default function Home() {
 	const container = useRef(null);
@@ -41,6 +42,7 @@ export default function Home() {
 				title="Barnens klubb"
 				description="Våra barn ska inte bara få eminent träning, de ska också få ha roligt och känna sig inkluderade"
 			/>
+			<ZoomSection />
 			<Section
 				image={traningThn}
 				tag="traning"
@@ -54,7 +56,7 @@ export default function Home() {
 				description="Denna tävling är viktig för oss för det är då man som nybörjare har chansen att kunna prova sina vingar utan press"
 			/>
 			<div ref={container} className="relative mt-[10vh] px-4">
-				<h2 className="sticky top-20 text-center sm:text-6xl">Våra eminenta tränare!</h2>
+				<h2 className="sticky top-20 text-center sm:text-6xl">Vi som är tränare</h2>
 				{projects.map((project, i) => {
 					const targetScale = 1 - (projects.length - i) * 0.05;
 					return (
