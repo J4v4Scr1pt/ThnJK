@@ -49,8 +49,10 @@ const socialItems = [
 
 export function Footer() {
 	return (
-		<footer className="footer sticky bottom-0 flex h-auto flex-col bg-content1">
-			<div className="mx-auto flex h-full w-full  flex-col items-center justify-center p-2 pt-3 lg:mx-0">
+		<footer
+			className="relative flex h-[160px] flex-col bg-content1"
+			style={{ clipPath: 'polygon(0% 0, 100% 0%, 100% 100%, 0 100%)' }}>
+			<div className="fixed bottom-0 mx-auto flex h-[160px] w-full flex-col items-center justify-center p-2 pt-3 lg:mx-0">
 				<div className="flex items-center justify-center">
 					<span className="text-small font-medium sm:text-medium">Våra sponsorer</span>
 				</div>
