@@ -6,6 +6,8 @@ import { NextuiProvider } from './providers/NextuiProvider';
 import Header from '@/components/Navigation/Header';
 import { NextThemesProvider } from './providers/NextThemesProvider';
 import { Footer } from '@/components/Navigation/Footer';
+import PageTransitionEffect from '@/components/PageTransitionEffect';
+import BackgroundImage from '@/components/BackgroundImage';
 // import { LocaleProvider } from '@/i18n/LocaleProvider';
 // import { getLocale } from '@/i18n/server';
 
@@ -28,7 +30,10 @@ export default function RootLayout({
 				<NextuiProvider>
 					<NextThemesProvider>
 						<Header />
-						<main className="main-content min-h-screen">{children}</main>
+						<BackgroundImage />
+						<main className="main-content min-h-screen">
+							<PageTransitionEffect>{children}</PageTransitionEffect>
+						</main>
 						<Footer />
 					</NextThemesProvider>
 				</NextuiProvider>

@@ -2,9 +2,9 @@
 import { useScroll } from 'framer-motion';
 import { useRef } from 'react';
 import { projects } from './data';
-import Card from '@/components/Card';
-import { HeroSection } from '@/components/HeroSection';
-import { Section } from '@/components/Section';
+import TrainerCard from './_componentsHome/TrainerCard';
+import { HeroSection } from '@/app/_componentsHome/HeroSection/HeroSection';
+import { Section } from '@/app/_componentsHome/Section';
 import { ReactLenis } from 'lenis/react';
 
 import medaljerTT from '@/../public/images/medaljerTT.jpg';
@@ -12,7 +12,7 @@ import ungdomarTT from '@/../public/images/ungdomarTT.jpg';
 import barnThn from '@/../public/images/barnThn.jpg';
 import traningThn from '@/../public/images/traningThn.jpg';
 import lillaTT from '@/../public/images/lillaTT.jpg';
-import ZoomSection from '@/components/ZoomSection';
+import ZoomSection from '@/app/_componentsHome/ZoomSection';
 
 export default function Home() {
 	const container = useRef(null);
@@ -60,7 +60,7 @@ export default function Home() {
 				{projects.map((project, i) => {
 					const targetScale = 1 - (projects.length - i) * 0.05;
 					return (
-						<Card
+						<TrainerCard
 							key={`p_${i}`}
 							i={i}
 							{...project}

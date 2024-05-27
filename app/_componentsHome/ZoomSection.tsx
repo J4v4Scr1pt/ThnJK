@@ -17,7 +17,7 @@ export default function ZoomSection() {
 		offset: ['start start', 'end end'],
 	});
 
-	const scale4 = useTransform(scrollYProgress, [0, 1], [1, 4]);
+	const scale4 = useTransform(scrollYProgress, [0, 1], [1, 4.1]);
 	const scale5 = useTransform(scrollYProgress, [0, 1], [1, 5]);
 	const scale6 = useTransform(scrollYProgress, [0, 1], [1, 6]);
 	const scale8 = useTransform(scrollYProgress, [0, 1], [1, 8]);

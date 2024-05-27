@@ -3,12 +3,11 @@ import Image from 'next/image';
 import { useTransform, motion, useScroll } from 'framer-motion';
 import { useRef } from 'react';
 
-const Card = ({
+const TrainerCard = ({
 	i,
 	title,
 	description,
 	src,
-	url,
 	color,
 	progress,
 	range,
@@ -55,4 +54,4 @@ const Card = ({
 	);
 };
 
-export default Card;
+export default TrainerCard;

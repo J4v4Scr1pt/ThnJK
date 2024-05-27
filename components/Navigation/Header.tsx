@@ -8,7 +8,6 @@ import {
 	NavbarMenu,
 	NavbarMenuItem,
 	NavbarMenuToggle,
-	Link,
 	Dropdown,
 	DropdownTrigger,
 	DropdownMenu,
@@ -21,8 +20,12 @@ import {
 import { TjkIcon } from './TjkIcon';
 import ThemeSwitcher from '../ThemeSwitcher';
 import { InfoDropdown } from './InfoDropdown';
+import { usePathname } from 'next/navigation';
+import Link from 'next/link';
 
 export default function NavbarComp() {
+	const pathname = usePathname();
+	const currentPath = pathname;
 	return (
 		<Navbar
 			className="header"
@@ -35,14 +38,19 @@ export default function NavbarComp() {
 			<NavbarBrand className="flex-grow-0">
 				<NavbarMenuToggle className="mr-2 h-6 lg:hidden" />
 				<TjkIcon />
-				<p className="font-bold text-inherit">TJK</p>
+				<NavbarItem isActive={currentPath === '/'}>
+					<Link aria-current={currentPath === '/'} className="font-bold text-inherit" href="/">
+						TJK
+					</Link>
+				</NavbarItem>
+				{/* <p className="font-bold text-inherit">TJK</p> */}
 			</NavbarBrand>
 			<NavbarContent
 				className="ml-4 hidden h-12 w-full max-w-fit gap-4 rounded-full bg-content2 px-4 dark:bg-content1 lg:flex"
 				justify="center">
 				<InfoDropdown />
-				<NavbarItem isActive>
-					<Link aria-current="page" className="flex gap-2 text-inherit" href="#">
+				<NavbarItem isActive={currentPath === 'Membership'}>
+					<Link className="flex gap-2 text-inherit" href="Membership">
 						Medlemskap
 					</Link>
 				</NavbarItem>
@@ -143,8 +151,12 @@ export default function NavbarComp() {
 						</AccordionItem>
 					</Accordion>
 				</NavbarMenuItem>
-				<NavbarMenuItem isActive>
-					<Link aria-current="page" className="w-full" color="primary" href="#">
+				<NavbarMenuItem isActive={currentPath === 'Membership'}>
+					<Link
+						aria-current={currentPath === 'Membership'}
+						className="w-full"
+						color="primary"
+						href="Membership">
 						Medlemskap
 					</Link>
 				</NavbarMenuItem>

@@ -23,8 +23,22 @@ export default function ThemeSwitcher() {
 			onValueChange={(prev) => {
 				setTheme(prev ? 'light' : 'dark');
 			}}
-			startContent={<Icon className="text-default-400" icon="solar:sun-2-linear" width={24} />}
-			endContent={<Icon className="text-default-400" icon="solar:moon-linear" width={24} />}
+			startContent={
+				<Icon
+					className="text-default-800"
+					color="white"
+					style={{ height: '18px', width: '18px' }}
+					icon="game-icons:black-belt"
+				/>
+			}
+			endContent={
+				<Icon
+					className="text-default-800"
+					color="black"
+					style={{ height: '18px', width: '18px' }}
+					icon="game-icons:black-belt"
+				/>
+			}
 		/>
 	);
 }
