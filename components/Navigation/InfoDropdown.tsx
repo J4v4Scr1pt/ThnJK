@@ -11,6 +11,7 @@ export function InfoDropdown() {
 		gender: <Icon className="text-primary-500" icon="icons8:gender" width={24} />,
 		policy: <Icon className="text-primary-500" icon="carbon:policy" width={24} />,
 		judo: <Icon className="text-primary-500" icon="emojione-monotone:martial-arts-uniform" width={24} />,
+		peoplePanel: <Icon className="text-primary-500" icon="fa6-solid:people-line" width={24} />,
 	};
 	return (
 		<Dropdown>
@@ -27,7 +28,7 @@ export function InfoDropdown() {
 				</DropdownTrigger>
 			</NavbarItem>
 			<DropdownMenu
-				aria-label="ACME features"
+				aria-label="ThnJkInfo"
 				className="w-[340px]"
 				itemClasses={{
 					base: 'gap-4',
@@ -43,6 +44,12 @@ export function InfoDropdown() {
 					description="Beskrivning om Judons bakgrund och nyttiga länkar"
 					startContent={icons.judo}>
 					Vad är Judo/Länkar
+				</DropdownItem>
+				<DropdownItem
+					key="people_panel"
+					description="Våra tränare och styrelsemedlemmar"
+					startContent={icons.peoplePanel}>
+					Tränare & Styrelsen
 				</DropdownItem>
 				<DropdownItem
 					key="policys"

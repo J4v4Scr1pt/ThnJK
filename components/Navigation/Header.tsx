@@ -43,7 +43,6 @@ export default function NavbarComp() {
 						TJK
 					</Link>
 				</NavbarItem>
-				{/* <p className="font-bold text-inherit">TJK</p> */}
 			</NavbarBrand>
 			<NavbarContent
 				className="ml-4 hidden h-12 w-full max-w-fit gap-4 rounded-full bg-content2 px-4 dark:bg-content1 lg:flex"
@@ -135,12 +134,17 @@ export default function NavbarComp() {
 			<NavbarMenu>
 				<NavbarMenuItem>
 					<Accordion className="p-0" itemClasses={{ title: 'font-normal text-medium' }}>
-						<AccordionItem title="Information" classNames={{ trigger: 'p-0' }}>
+						<AccordionItem
+							title="Information"
+							classNames={{ content: 'flex flex-col', trigger: 'p-0' }}>
 							<Link className="w-full" color="foreground" href="#">
 								Om klubben
 							</Link>
 							<Link className="w-full" color="foreground" href="#">
 								Vad är Judo/Länkar
+							</Link>
+							<Link className="w-full" color="foreground" href="#">
+								Tränare & Styrelsen
 							</Link>
 							<Link className="w-full" color="foreground" href="#">
 								Policys avseende avgifter och ledare vid läger och tävling
