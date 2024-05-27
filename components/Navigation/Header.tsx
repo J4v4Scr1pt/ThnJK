@@ -56,8 +56,11 @@ export default function NavbarComp() {
 						Medlemskap
 					</Link>
 				</NavbarItem>
-				<NavbarItem>
-					<Link className="flex gap-2 text-inherit" href="#">
+				<NavbarItem isActive={currentPath === '/TrainingTimes'}>
+					<Link
+						aria-current={currentPath === '/TrainingTimes'}
+						className="flex gap-2 text-inherit"
+						href="TrainingTimes">
 						Träningstider
 					</Link>
 				</NavbarItem>
@@ -167,8 +170,12 @@ export default function NavbarComp() {
 						Medlemskap
 					</Link>
 				</NavbarMenuItem>
-				<NavbarMenuItem>
-					<Link className="w-full" color="foreground" href="#">
+				<NavbarMenuItem isActive={currentPath === '/TrainingTimes'}>
+					<Link
+						aria-current={currentPath === '/TrainingTimes'}
+						className="w-full"
+						color="foreground"
+						href="TrainingTimes">
 						Träningstider
 					</Link>
 				</NavbarMenuItem>
