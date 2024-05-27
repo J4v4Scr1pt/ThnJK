@@ -49,8 +49,11 @@ export default function NavbarComp() {
 				className="ml-4 hidden h-12 w-full max-w-fit gap-4 rounded-full bg-content2 px-4 dark:bg-content1 lg:flex"
 				justify="center">
 				<InfoDropdown />
-				<NavbarItem isActive={currentPath === 'Membership'}>
-					<Link className="flex gap-2 text-inherit" href="Membership">
+				<NavbarItem isActive={currentPath === '/Membership'}>
+					<Link
+						aria-current={currentPath === '/Membership'}
+						className="flex gap-2 text-inherit"
+						href="Membership">
 						Medlemskap
 					</Link>
 				</NavbarItem>
@@ -151,9 +154,9 @@ export default function NavbarComp() {
 						</AccordionItem>
 					</Accordion>
 				</NavbarMenuItem>
-				<NavbarMenuItem isActive={currentPath === 'Membership'}>
+				<NavbarMenuItem isActive={currentPath === '/Membership'}>
 					<Link
-						aria-current={currentPath === 'Membership'}
+						aria-current={currentPath === '/Membership'}
 						className="w-full"
 						color="primary"
 						href="Membership">
