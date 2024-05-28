@@ -1,4 +1,4 @@
-export const projects=[
+export const trainers=[
     {
         title: "John Doe",
         description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus sit repudiandae hic praesentium magnam eos neque quis quibusdam id, architecto excepturi molestiae dolorum laudantium, est deleniti nesciunt asperiores dolores iste?",

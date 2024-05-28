@@ -69,13 +69,19 @@ export default function NavbarComp() {
 						Tävlingskalender
 					</Link>
 				</NavbarItem>
-				<NavbarItem>
-					<Link className="flex gap-2 text-inherit" href="#">
+				<NavbarItem isActive={currentPath === '/BigAndLittle'}>
+					<Link
+						aria-current={currentPath === '/BigAndLittle'}
+						className="flex gap-2 text-inherit"
+						href="BigAndLittle">
 						Stor & Liten
 					</Link>
 				</NavbarItem>
-				<NavbarItem>
-					<Link className="flex gap-2 text-inherit" href="#">
+				<NavbarItem isActive={currentPath === '/FallSafetyForTheElderly'}>
+					<Link
+						aria-current={currentPath === '/FallSafetyForTheElderly'}
+						className="flex gap-2 text-inherit"
+						href="FallSafetyForTheElderly">
 						Falltryghet för äldre
 					</Link>
 				</NavbarItem>
@@ -184,13 +190,21 @@ export default function NavbarComp() {
 						Tävlingskalender
 					</Link>
 				</NavbarMenuItem>
-				<NavbarMenuItem>
-					<Link className="w-full" color="foreground" href="#">
+				<NavbarMenuItem isActive={currentPath === '/BigAndLittle'}>
+					<Link
+						aria-current={currentPath === '/BigAndLittle'}
+						className="w-full"
+						color="foreground"
+						href="BigAndLittle">
 						Stor & Liten
 					</Link>
 				</NavbarMenuItem>
-				<NavbarMenuItem>
-					<Link className="w-full" color="foreground" href="#">
+				<NavbarMenuItem isActive={currentPath === '/FallSafetyForTheElderly'}>
+					<Link
+						aria-current={currentPath === '/FallSafetyForTheElderly'}
+						className="w-full"
+						color="foreground"
+						href="FallSafetyForTheElderly">
 						Falltryghet för äldre
 					</Link>
 				</NavbarMenuItem>

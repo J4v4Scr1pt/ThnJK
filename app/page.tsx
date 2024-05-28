@@ -1,7 +1,7 @@
 'use client';
 import { useScroll } from 'framer-motion';
 import { useRef } from 'react';
-import { projects } from './data';
+import { trainers } from './trainers';
 import TrainerCard from './_componentsHome/TrainerCard';
 import { HeroSection } from '@/app/_componentsHome/HeroSection/HeroSection';
 import { Section } from '@/app/_componentsHome/Section';
@@ -57,8 +57,8 @@ export default function Home() {
 			/>
 			<div ref={container} className="relative mt-[10vh] px-4">
 				<h2 className="sticky top-20 text-center sm:text-6xl">Vi som är tränare</h2>
-				{projects.map((project, i) => {
-					const targetScale = 1 - (projects.length - i) * 0.05;
+				{trainers.map((project, i) => {
+					const targetScale = 1 - (trainers.length - i) * 0.05;
 					return (
 						<TrainerCard
 							key={`p_${i}`}
