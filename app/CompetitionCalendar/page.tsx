@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Tavlingskalender from '@/public/images/Tavlingskalender-2024-VAREN_3.png';
+import Tavlingskalender from '@/public/images/tavlingskalender-2024-VAREN_3.png';
 
 export default function CompetitionCalendarPage() {
 	return (
