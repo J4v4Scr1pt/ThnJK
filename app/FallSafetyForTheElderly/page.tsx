@@ -3,6 +3,7 @@ export default function FallSafetyForTheElderlyPage() {
 		<div className="ml-auto mr-auto max-w-[1200px] p-3">
 			<section>
 				<h1 className="text-3xl">Falltrygghet för äldre</h1>
+                <br />
 				<p>
 					I träningsgruppen falltrygghet för äldre tränar vi din knopp och kropp för att minska
 					risken för skada vid fall. Du lär dig falltekniker, får bättre balans och kommer bli

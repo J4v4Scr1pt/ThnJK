@@ -64,8 +64,8 @@ export default function NavbarComp() {
 						Träningstider
 					</Link>
 				</NavbarItem>
-				<NavbarItem>
-					<Link className="flex gap-2 text-inherit" href="#">
+				<NavbarItem isActive={currentPath === '/CompetitionCalendar'}>
+					<Link className="flex gap-2 text-inherit" href="/CompetitionCalendar" aria-current={currentPath === '/CompetitionCalendar'}>
 						Tävlingskalender
 					</Link>
 				</NavbarItem>
@@ -90,9 +90,9 @@ export default function NavbarComp() {
 						Kontakt och faktauppgifter
 					</Link>
 				</NavbarItem> */}
-				<NavbarItem>
-					<Link className="flex gap-2 text-inherit" href="#">
-						Föreninsdokument
+				<NavbarItem isActive={currentPath === '/AssociationDocuments'}>
+					<Link aria-current={currentPath === '/AssociationDocuments'} className="flex gap-2 text-inherit" href="/AssociationDocuments">
+					Föreningsdokument
 					</Link>
 				</NavbarItem>
 			</NavbarContent>
@@ -185,8 +185,8 @@ export default function NavbarComp() {
 						Träningstider
 					</Link>
 				</NavbarMenuItem>
-				<NavbarMenuItem>
-					<Link className="w-full" color="foreground" href="#">
+				<NavbarMenuItem isActive={currentPath === '/CompetitionCalendar'}>
+					<Link aria-current={currentPath === '/CompetitionCalendar'} className="w-full" color="foreground" href="/CompetitionCalendar">
 						Tävlingskalender
 					</Link>
 				</NavbarMenuItem>
@@ -213,9 +213,9 @@ export default function NavbarComp() {
 						Kontakt och faktauppgifter
 					</Link>
 				</NavbarMenuItem>
-				<NavbarMenuItem>
-					<Link className="w-full" color="foreground" href="#">
-						Föreningsdokument
+				<NavbarMenuItem isActive={currentPath === '/AssociationDocuments'}>
+					<Link aria-current={currentPath === '/AssociationDocuments'} className="w-full" color="foreground" href="/AssociationDocuments">
+					Föreningsdokument
 					</Link>
 				</NavbarMenuItem>
 			</NavbarMenu>
