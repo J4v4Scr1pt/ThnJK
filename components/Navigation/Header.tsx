@@ -65,7 +65,10 @@ export default function NavbarComp() {
 					</Link>
 				</NavbarItem>
 				<NavbarItem isActive={currentPath === '/CompetitionCalendar'}>
-					<Link className="flex gap-2 text-inherit" href="/CompetitionCalendar" aria-current={currentPath === '/CompetitionCalendar'}>
+					<Link
+						className="flex gap-2 text-inherit"
+						href="/CompetitionCalendar"
+						aria-current={currentPath === '/CompetitionCalendar'}>
 						Tävlingskalender
 					</Link>
 				</NavbarItem>
@@ -91,8 +94,11 @@ export default function NavbarComp() {
 					</Link>
 				</NavbarItem> */}
 				<NavbarItem isActive={currentPath === '/AssociationDocuments'}>
-					<Link aria-current={currentPath === '/AssociationDocuments'} className="flex gap-2 text-inherit" href="/AssociationDocuments">
-					Föreningsdokument
+					<Link
+						aria-current={currentPath === '/AssociationDocuments'}
+						className="flex gap-2 text-inherit"
+						href="/AssociationDocuments">
+						Föreningsdokument
 					</Link>
 				</NavbarItem>
 			</NavbarContent>
@@ -102,7 +108,7 @@ export default function NavbarComp() {
 				<NavbarItem className="flex">
 					<ThemeSwitcher />
 				</NavbarItem>
-				<NavbarItem className="ml-2">
+				{/* <NavbarItem className="ml-2">
 					<Dropdown placement="bottom-end">
 						<DropdownTrigger>
 							<button className="mt-1 h-8 w-8 outline-none transition-transform">
@@ -136,7 +142,7 @@ export default function NavbarComp() {
 							</DropdownItem>
 						</DropdownMenu>
 					</Dropdown>
-				</NavbarItem>
+				</NavbarItem> */}
 			</NavbarContent>
 
 			{/* Mobile Menu */}
@@ -186,7 +192,11 @@ export default function NavbarComp() {
 					</Link>
 				</NavbarMenuItem>
 				<NavbarMenuItem isActive={currentPath === '/CompetitionCalendar'}>
-					<Link aria-current={currentPath === '/CompetitionCalendar'} className="w-full" color="foreground" href="/CompetitionCalendar">
+					<Link
+						aria-current={currentPath === '/CompetitionCalendar'}
+						className="w-full"
+						color="foreground"
+						href="/CompetitionCalendar">
 						Tävlingskalender
 					</Link>
 				</NavbarMenuItem>
@@ -214,8 +224,12 @@ export default function NavbarComp() {
 					</Link>
 				</NavbarMenuItem>
 				<NavbarMenuItem isActive={currentPath === '/AssociationDocuments'}>
-					<Link aria-current={currentPath === '/AssociationDocuments'} className="w-full" color="foreground" href="/AssociationDocuments">
-					Föreningsdokument
+					<Link
+						aria-current={currentPath === '/AssociationDocuments'}
+						className="w-full"
+						color="foreground"
+						href="/AssociationDocuments">
+						Föreningsdokument
 					</Link>
 				</NavbarMenuItem>
 			</NavbarMenu>

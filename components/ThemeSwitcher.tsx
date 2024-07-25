@@ -18,6 +18,7 @@ export default function ThemeSwitcher() {
 		<Switch
 			defaultSelected
 			size="lg"
+			classNames={{ wrapper: 'm-0' }}
 			color="primary"
 			isSelected={theme === 'light'}
 			onValueChange={(prev) => {
