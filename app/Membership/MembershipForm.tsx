@@ -13,6 +13,7 @@ import {
 } from '@nextui-org/react';
 import { useFormState, useFormStatus } from 'react-dom';
 import { membershipSchema } from './membershipSchema';
+import { sendEmail } from './actions';
 
 export function MembershipForm() {
 	const { isOpen, onOpen, onClose, onOpenChange } = useDisclosure();
@@ -25,7 +26,9 @@ export function MembershipForm() {
 		}
 
 		if (parsed.success) {
-			onClose();
+			const response = await sendEmail(parsed.data);
+			//TODO fix an nice sccess message thing
+			if (response?.success) onClose();
 		}
 		return null;
 	};

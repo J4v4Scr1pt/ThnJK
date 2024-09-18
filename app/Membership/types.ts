@@ -39,3 +39,19 @@ type formState = {
 		_errors: string[];
 	};
 } | null;
+
+type membership = {
+	date: string;
+	firstName: string;
+	lastName: string;
+	socialSecurityNumber: string;
+	streetAddress: string;
+	mailingAddress: string;
+	phoneNumber: string;
+	eMail: string;
+	otherInfo: string | null;
+	relativeName: string;
+	relativePhoneNumber: string;
+	relativeSocialSecurityNumber: string;
+	relativeEmail: string;
+};
