@@ -8,7 +8,7 @@ export async function sendEmail(membership: membership) {
 			Accept: 'application/json',
 		},
 		body: JSON.stringify({
-			access_key: '387fae22-85e3-4be1-b622-9b2c0210306f', // TODO: put in env
+			access_key: 'b48528f2-99a1-4634-9a87-451505c8fa82', // TODO: put in env
 			subject: 'Medlemskap',
 			...membership,
 		}),

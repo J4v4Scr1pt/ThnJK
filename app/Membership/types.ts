@@ -44,7 +44,7 @@ type membership = {
 	date: string;
 	firstName: string;
 	lastName: string;
-	socialSecurityNumber: string;
+	ssNumber: string;
 	streetAddress: string;
 	mailingAddress: string;
 	phoneNumber: string;
@@ -52,6 +52,6 @@ type membership = {
 	otherInfo: string | null;
 	relativeName: string;
 	relativePhoneNumber: string;
-	relativeSocialSecurityNumber: string;
+	relativeSsNumber: string;
 	relativeEmail: string;
 };

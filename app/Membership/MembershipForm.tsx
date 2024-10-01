@@ -76,9 +76,9 @@ export function MembershipForm() {
 										isRequired
 										label="Personnummer"
 										type="number"
-										name="socialSecurityNumber"
-										isInvalid={Boolean(formState?.socialSecurityNumber)}
-										errorMessage={formState?.socialSecurityNumber?._errors[0]}
+										name="ssNumber"
+										isInvalid={Boolean(formState?.ssNumber)}
+										errorMessage={formState?.ssNumber?._errors[0]}
 									/>
 									<Input
 										isRequired
@@ -150,9 +150,9 @@ export function MembershipForm() {
 										isRequired
 										label="Personnummer"
 										type="number"
-										name="relativeSocialSecurityNumber"
-										isInvalid={Boolean(formState?.relativeSocialSecurityNumber)}
-										errorMessage={formState?.relativeSocialSecurityNumber?._errors[0]}
+										name="relativeSsNumber"
+										isInvalid={Boolean(formState?.relativeSsNumber)}
+										errorMessage={formState?.relativeSsNumber?._errors[0]}
 									/>
 									<Input
 										isRequired
