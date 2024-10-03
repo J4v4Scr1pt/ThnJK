@@ -1,5 +1,5 @@
 'use client';
-import { cn } from '@/utils/cn';
+import { cn } from '@nextui-org/react';
 import { useMotionValue, motion, useMotionTemplate } from 'framer-motion';
 
 export const HeroHighlight = ({
@@ -26,7 +26,7 @@ export const HeroHighlight = ({
 				containerClassName
 			)}
 			onMouseMove={handleMouseMove}>
-			<div className="pointer-events-none absolute inset-0 bg-dot-thick-neutral-300  dark:bg-dot-thick-neutral-800" />
+			<div className="pointer-events-none absolute inset-0 bg-dot-thick-neutral-300 dark:bg-dot-thick-neutral-800" />
 			<motion.div
 				className="pointer-events-none absolute inset-0 opacity-0 transition duration-300 bg-dot-thick-indigo-500 group-hover:opacity-100 dark:bg-dot-thick-indigo-500"
 				style={{
@@ -61,7 +61,7 @@ export const HeroHighlight = ({
 						duration: 0.5,
 						ease: [0.4, 0.0, 0.2, 1],
 					}}
-					className="mx-auto max-w-5xl px-4 text-center text-lg font-bold leading-relaxed text-neutral-700 dark:text-white md:text-4xl lg:text-5xl lg:leading-snug ">
+					className="mx-auto max-w-5xl px-4 text-center text-lg font-bold leading-relaxed text-neutral-700 dark:text-white md:text-4xl lg:text-5xl lg:leading-snug">
 					Välkommen till <br />
 					<Highlight className="text-lg text-black dark:text-white sm:text-6xl">
 						Trollhättans Judoklubb!

@@ -22,12 +22,16 @@ import ThemeSwitcher from '../ThemeSwitcher';
 import { InfoDropdown } from './InfoDropdown';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
+import { useState } from 'react';
 
 export default function NavbarComp() {
 	const pathname = usePathname();
 	const currentPath = pathname;
+	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	return (
 		<Navbar
+			isMenuOpen={isMenuOpen}
+			onMenuOpenChange={setIsMenuOpen}
 			className="header"
 			classNames={{
 				base: 'lg:bg-transparent lg:backdrop-filter-none max-w-full',
@@ -152,22 +156,46 @@ export default function NavbarComp() {
 						<AccordionItem
 							title="Information"
 							classNames={{ content: 'flex flex-col', trigger: 'p-0' }}>
-							<Link className="w-full" color="foreground" href="#">
+							<Link
+								className="w-full"
+								color="foreground"
+								href="#"
+								onClick={() => setIsMenuOpen((prev) => !prev)}>
 								Om klubben
 							</Link>
-							<Link className="w-full" color="foreground" href="#">
+							<Link
+								className="w-full"
+								color="foreground"
+								href="#"
+								onClick={() => setIsMenuOpen((prev) => !prev)}>
 								Vad är Judo/Länkar
 							</Link>
-							<Link className="w-full" color="foreground" href="#">
+							<Link
+								className="w-full"
+								color="foreground"
+								href="#"
+								onClick={() => setIsMenuOpen((prev) => !prev)}>
 								Tränare & Styrelsen
 							</Link>
-							<Link className="w-full" color="foreground" href="#">
+							<Link
+								className="w-full"
+								color="foreground"
+								href="#"
+								onClick={() => setIsMenuOpen((prev) => !prev)}>
 								Policys avseende avgifter och ledare vid läger och tävling
 							</Link>
-							<Link className="w-full" color="foreground" href="#">
+							<Link
+								className="w-full"
+								color="foreground"
+								href="#"
+								onClick={() => setIsMenuOpen((prev) => !prev)}>
 								Vaccinerad Klubb
 							</Link>
-							<Link className="w-full" color="foreground" href="#">
+							<Link
+								className="w-full"
+								color="foreground"
+								href="#"
+								onClick={() => setIsMenuOpen((prev) => !prev)}>
 								Inkluderings och jämställdhetsplan
 							</Link>
 						</AccordionItem>
@@ -175,6 +203,7 @@ export default function NavbarComp() {
 				</NavbarMenuItem>
 				<NavbarMenuItem isActive={currentPath === '/Membership'}>
 					<Link
+						onClick={() => setIsMenuOpen((prev) => !prev)}
 						aria-current={currentPath === '/Membership'}
 						className="w-full"
 						color="primary"
@@ -184,6 +213,7 @@ export default function NavbarComp() {
 				</NavbarMenuItem>
 				<NavbarMenuItem isActive={currentPath === '/TrainingTimes'}>
 					<Link
+						onClick={() => setIsMenuOpen((prev) => !prev)}
 						aria-current={currentPath === '/TrainingTimes'}
 						className="w-full"
 						color="foreground"
@@ -193,6 +223,7 @@ export default function NavbarComp() {
 				</NavbarMenuItem>
 				<NavbarMenuItem isActive={currentPath === '/CompetitionCalendar'}>
 					<Link
+						onClick={() => setIsMenuOpen((prev) => !prev)}
 						aria-current={currentPath === '/CompetitionCalendar'}
 						className="w-full"
 						color="foreground"
@@ -202,6 +233,7 @@ export default function NavbarComp() {
 				</NavbarMenuItem>
 				<NavbarMenuItem isActive={currentPath === '/BigAndLittle'}>
 					<Link
+						onClick={() => setIsMenuOpen((prev) => !prev)}
 						aria-current={currentPath === '/BigAndLittle'}
 						className="w-full"
 						color="foreground"
@@ -211,6 +243,7 @@ export default function NavbarComp() {
 				</NavbarMenuItem>
 				<NavbarMenuItem isActive={currentPath === '/FallSafetyForTheElderly'}>
 					<Link
+						onClick={() => setIsMenuOpen((prev) => !prev)}
 						aria-current={currentPath === '/FallSafetyForTheElderly'}
 						className="w-full"
 						color="foreground"
@@ -218,13 +251,18 @@ export default function NavbarComp() {
 						Falltryghet för äldre
 					</Link>
 				</NavbarMenuItem>
-				<NavbarMenuItem>
-					<Link className="w-full" color="foreground" href="#">
+				{/* <NavbarMenuItem>
+					<Link
+						className="w-full"
+						color="foreground"
+						href="#"
+						onClick={() => setIsMenuOpen((prev) => !prev)}>
 						Kontakt och faktauppgifter
 					</Link>
-				</NavbarMenuItem>
+				</NavbarMenuItem> */}
 				<NavbarMenuItem isActive={currentPath === '/AssociationDocuments'}>
 					<Link
+						onClick={() => setIsMenuOpen((prev) => !prev)}
 						aria-current={currentPath === '/AssociationDocuments'}
 						className="w-full"
 						color="foreground"
