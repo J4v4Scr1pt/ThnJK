@@ -20,6 +20,7 @@ export default function AssociationDocumentsPage() {
 			<section>
 				<h1 className="text-3xl">Föreningsdokument</h1>
 				<br />
+				<br />
 				<Table aria-label="Table for association documents">
 					<TableHeader>
 						<TableColumn>Namn</TableColumn>
