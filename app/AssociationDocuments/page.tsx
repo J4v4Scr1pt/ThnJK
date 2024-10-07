@@ -13,6 +13,7 @@ import {
 	TableHeader,
 	TableRow,
 } from '@nextui-org/react';
+import Link from 'next/link';
 
 export default function AssociationDocumentsPage() {
 	return (
@@ -26,7 +27,7 @@ export default function AssociationDocumentsPage() {
 						<TableColumn>Namn</TableColumn>
 						<TableColumn>Storlek</TableColumn>
 						<TableColumn>Datum</TableColumn>
-						<TableColumn>Typ</TableColumn>
+						<TableColumn>Meny</TableColumn>
 					</TableHeader>
 					<TableBody>
 						<TableRow key="1">
@@ -46,8 +47,23 @@ export default function AssociationDocumentsPage() {
 											</Button>
 										</DropdownTrigger>
 										<DropdownMenu>
-											<DropdownItem>Öppna</DropdownItem>
-											<DropdownItem>Ladda ner</DropdownItem>
+											<DropdownItem
+												as={Link}
+												href="/documents/Arsmotesprotokoll_TJK_2024.pdf"
+												target="_blank"
+												aria-label="Open Arsmotesprotokoll_TJK_2024">
+												Öppna
+											</DropdownItem>
+											<DropdownItem>
+												<Link
+													href="/documents/Arsmotesprotokoll_TJK_2024.pdf"
+													download="Arsmotesprotokoll_TJK_2024.pdf"
+													rel="noopener noreferrer"
+													target="_blank"
+													aria-label="Download Arsmotesprotokoll_TJK_2024">
+													Ladda ner
+												</Link>
+											</DropdownItem>
 										</DropdownMenu>
 									</Dropdown>
 								</div>
@@ -70,8 +86,24 @@ export default function AssociationDocumentsPage() {
 											</Button>
 										</DropdownTrigger>
 										<DropdownMenu>
-											<DropdownItem>Öppna</DropdownItem>
-											<DropdownItem>Ladda ner</DropdownItem>
+											<DropdownItem>
+												<Link
+													className="w-full"
+													href="/documents/Verksamhetsberattelse-2023.pdf"
+													target="_blank"
+													aria-label="Open Verksamhetsberattelse-2023">
+													Öppna
+												</Link>
+											</DropdownItem>
+											<DropdownItem
+												as={Link}
+												href="/documents/Verksamhetsberattelse-2023.pdf"
+												download="Verksamhetsberattelse-2023.pdf"
+												rel="noopener noreferrer"
+												target="_blank"
+												aria-label="Download Verksamhetsberattelse-2023">
+												Ladda ner
+											</DropdownItem>
 										</DropdownMenu>
 									</Dropdown>
 								</div>
@@ -94,8 +126,23 @@ export default function AssociationDocumentsPage() {
 											</Button>
 										</DropdownTrigger>
 										<DropdownMenu>
-											<DropdownItem>Öppna</DropdownItem>
-											<DropdownItem>Ladda ner</DropdownItem>
+											<DropdownItem
+												as={Link}
+												href="/documents/Stadgar_TJK.pdf"
+												target="_blank"
+												aria-label="Open Stadgar_TJK">
+												Öppna
+											</DropdownItem>
+											<DropdownItem>
+												<Link
+													href="/documents/Stadgar_TJK.pdf"
+													download="Stadgar_TJK.pdf"
+													rel="noopener noreferrer"
+													target="_blank"
+													aria-label="Download Stadgar_TJK">
+													Ladda ner
+												</Link>
+											</DropdownItem>
 										</DropdownMenu>
 									</Dropdown>
 								</div>

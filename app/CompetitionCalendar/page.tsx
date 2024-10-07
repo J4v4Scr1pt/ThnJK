@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { Card } from '@nextui-org/card';
 import Tavlingskalender from '@/public/images/tavlingskalender-2024-VAREN_3.png';
 
 export default function CompetitionCalendarPage() {
@@ -14,7 +15,7 @@ export default function CompetitionCalendarPage() {
 					godkänner/betalar alla anmälningar. Görs en anmälan efter detta kommer klubben inte
 					godkänna eller betala anmälan om man inte kan visa upp kvitto/bevis på att man själv
 					betalt in hela avgiften till Trollhättans Judoklubb.
-					<b className="text-red-500 underline">
+					<b className="text-danger-400 underline">
 						{' '}
 						Anmälan i god tid och avanmälan med giltigt skäl stöttar vi. Sen anmälan och ogiltig
 						avanmälan/ej dyker upp stöttar vi inte, utan medlemmen får stå för alla avgifter.
@@ -32,18 +33,20 @@ export default function CompetitionCalendarPage() {
 					<li>Läs vår policy avseende avgifter och ledare vid läger och tävling.</li>
 				</ul>
 
-				<Image
-					className="h-[700px] w-screen shadow-large dark:shadow-none"
-					{...{
-						alt: 'INFO-skarmdump-2023',
-						src: Tavlingskalender,
-						placeholder: 'blur',
-						priority: true,
-						quality: 100,
-						width: 738,
-						height: 700,
-					}}
-				/>
+				<Card>
+					<Image
+						className="h-[700px] w-screen"
+						{...{
+							alt: 'Tavlingskalender-2024',
+							src: Tavlingskalender,
+							placeholder: 'blur',
+							priority: true,
+							quality: 100,
+							width: 738,
+							height: 700,
+						}}
+					/>
+				</Card>
 			</section>
 		</div>
 	);

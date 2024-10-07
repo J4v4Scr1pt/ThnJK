@@ -32,7 +32,7 @@ const socialItems = [
 				xmlns="http://www.w3.org/2000/svg"
 				aria-hidden="true"
 				role="img"
-				className="size-5"
+				className="size-5 hover:text-secondary"
 				width="1em"
 				height="1em"
 				viewBox="0 0 512 512">
@@ -54,7 +54,9 @@ export function Footer() {
 			style={{ clipPath: 'polygon(0% 0, 100% 0%, 100% 100%, 0 100%)' }}>
 			<div className="fixed bottom-0 mx-auto flex h-[160px] w-full flex-col items-center justify-center p-2 pt-3 lg:mx-0">
 				<div className="flex items-center justify-center">
-					<span className="text-small font-medium sm:text-medium">Våra sponsorer</span>
+					<span className="text-small font-medium text-secondary sm:text-medium">
+						Våra sponsorer
+					</span>
 				</div>
 				<Spacer y={1} />
 				<ScrollingSponsors />
@@ -63,7 +65,7 @@ export function Footer() {
 					{socialItems.map((item) => (
 						<Link key={item.name} isExternal className="text-default-400" href={item.href}>
 							<span className="sr-only">{item.name}</span>
-							<item.icon aria-hidden="true" className="size-5" />
+							<item.icon aria-hidden="true" className="size-5 hover:text-secondary" />
 						</Link>
 					))}
 				</div>
