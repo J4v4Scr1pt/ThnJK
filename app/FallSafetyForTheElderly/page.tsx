@@ -49,12 +49,12 @@ export default function FallSafetyForTheElderlyPage() {
 				<h2 className="mt-5 text-xl font-bold underline">Anmälan</h2>
 				<p>
 					Anmälan och frågor sker till Emma Bönnestig, tfn:
-					<a className="text-blue-600 visited:text-purple-600" href="tel:0702315117">
+					<a className="mx-1 text-blue-600 visited:text-purple-600" href="tel:0702315117">
 						070-231 51 17
 					</a>
-					eller via e-post till
+					eller via e-post till:
 					<a
-						className="text-blue-600 visited:text-purple-600"
+						className="ml-1 text-blue-600 visited:text-purple-600"
 						href="mailto:trollhattansjk@gmail.com">
 						trollhattansjk@gmail.com
 					</a>
