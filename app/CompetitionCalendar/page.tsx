@@ -33,18 +33,17 @@ export default function CompetitionCalendarPage() {
 					<li>Läs vår policy avseende avgifter och ledare vid läger och tävling.</li>
 				</ul>
 
-				<Card>
+				<Card className="light">
 					<CardBody>
 						<Image
-							className="h-auto w-screen"
 							{...{
 								alt: 'Tavlingskalender-2024',
 								src: Tavlingskalender,
 								placeholder: 'blur',
 								priority: true,
 								quality: 100,
-								width: 738,
-								height: 700,
+								height: 1457,
+								width: 942,
 								style: {
 									width: '100%',
 									height: 'auto',

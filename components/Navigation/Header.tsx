@@ -160,7 +160,7 @@ export default function NavbarComp() {
 							<Link
 								className="w-full"
 								color="foreground"
-								href="#"
+								href="/WhatIsJudo"
 								onClick={() => setIsMenuOpen((prev) => !prev)}>
 								Vad är Judo/Länkar
 							</Link>

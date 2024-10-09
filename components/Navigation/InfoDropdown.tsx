@@ -45,7 +45,7 @@ export function InfoDropdown() {
 				<DropdownItem
 					as={Link}
 					key="links"
-					href=""
+					href="/WhatIsJudo"
 					description="Beskrivning om Judons bakgrund och nyttiga länkar"
 					startContent={icons.judo}>
 					Vad är Judo/Länkar

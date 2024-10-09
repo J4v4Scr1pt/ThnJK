@@ -30,10 +30,9 @@ export default function MembershipPage() {
 					<li>HELA PERSONNUMRET MÅSTE FYLLAS I</li>
 				</ul>
 
-				<Card className="h-[550px] w-[400px]">
-					<CardBody className="overflow-visible">
+				<Card className="h-auto w-auto light lg:h-[550px] lg:w-[400px]">
+					<CardBody>
 						<Image
-							className="h-[550px] w-[400px]"
 							{...{
 								alt: 'INFO-skarmdump-2023',
 								src: INFOSkarmdump2023,
@@ -42,6 +41,10 @@ export default function MembershipPage() {
 								quality: 100,
 								height: 550,
 								width: 400,
+								style: {
+									width: '100%',
+									height: '100%',
+								},
 							}}
 						/>
 					</CardBody>
