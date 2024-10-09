@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import { Card } from '@nextui-org/card';
-import Tavlingskalender from '@/public/images/tavlingskalender-2024-VAREN_3.png';
+import { Card, CardBody } from '@nextui-org/card';
+import Tavlingskalender from '@/public/images/Tavlingskalender-2024-HOSTEN.jpg';
 
 export default function CompetitionCalendarPage() {
 	return (
@@ -9,18 +9,19 @@ export default function CompetitionCalendarPage() {
 				<h1 className="text-3xl">Tävlingskalender</h1>
 				<br />
 				<p>
-					<b>Förtydligande om avgifter:</b> Från och med höstterminen 2023 gäller att man anmäler
-					sig före deadline i Smoothcomp för Early bird avgift om det finns eller standard avgift om
-					det inte finns Early Bird. Det innebär att klubben går in efter deadline och
+					<strong>Förtydligande om avgifter:</strong> Från och med höstterminen 2023 gäller att man
+					anmäler sig före deadline i Smoothcomp för Early bird avgift om det finns eller standard
+					avgift om det inte finns Early Bird. Det innebär att klubben går in efter deadline och
 					godkänner/betalar alla anmälningar. Görs en anmälan efter detta kommer klubben inte
 					godkänna eller betala anmälan om man inte kan visa upp kvitto/bevis på att man själv
 					betalt in hela avgiften till Trollhättans Judoklubb.
-					<b className="text-danger-400 underline">
-						Anmälan i god tid och avanmälan med giltigt skäl stöttar vi. Sen anmälan och ogiltig
-						avanmälan/ej dyker upp stöttar vi inte, utan medlemmen får stå för alla avgifter.
-					</b>
 				</p>
-				<ul className="my-8 list-inside list-disc">
+				<strong>OBS: </strong>
+				<strong className="text-red-500 underline">
+					Anmälan i god tid och avanmälan med giltigt skäl stöttar vi. Sen anmälan och ogiltig
+					avanmälan/ej dyker upp stöttar vi inte, utan medlemmen får stå för alla avgifter.
+				</strong>
+				<ul className="my-8 list-disc pl-6">
 					<li>
 						Anmälan görs individuellt i Smoothcomp (betalning klickar du förbi) Önskar du hjälp
 						med Smoothcomp be ledarna på klubben om hjälp.
@@ -33,18 +34,24 @@ export default function CompetitionCalendarPage() {
 				</ul>
 
 				<Card>
-					<Image
-						className="h-[700px] w-screen"
-						{...{
-							alt: 'Tavlingskalender-2024',
-							src: Tavlingskalender,
-							placeholder: 'blur',
-							priority: true,
-							quality: 100,
-							width: 738,
-							height: 700,
-						}}
-					/>
+					<CardBody>
+						<Image
+							className="h-auto w-screen"
+							{...{
+								alt: 'Tavlingskalender-2024',
+								src: Tavlingskalender,
+								placeholder: 'blur',
+								priority: true,
+								quality: 100,
+								width: 738,
+								height: 700,
+								style: {
+									width: '100%',
+									height: 'auto',
+								},
+							}}
+						/>
+					</CardBody>
 				</Card>
 			</section>
 		</div>

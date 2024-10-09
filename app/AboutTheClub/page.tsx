@@ -143,7 +143,7 @@ export default function AboutTheClubPage() {
 			<br />
 			<section>
 				<h2 className="font-bold">Regler i Dojon:</h2>
-				<ul className="list-inside list-disc">
+				<ul className="list-disc pl-6">
 					<li>Alla bugar när man kliver på och av mattan. </li>
 					<li>Vid hälsning inför och efter träningen sitter alla tysta och koncentrerade. </li>
 					<li>Buga för din träningspartner innan och efter en övning. </li>
