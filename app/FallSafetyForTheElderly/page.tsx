@@ -3,7 +3,7 @@ export default function FallSafetyForTheElderlyPage() {
 		<div className="ml-auto mr-auto max-w-[1200px] p-3">
 			<section>
 				<h1 className="text-3xl">Falltrygghet för äldre</h1>
-                <br />
+				<br />
 				<p>
 					I träningsgruppen falltrygghet för äldre tränar vi din knopp och kropp för att minska
 					risken för skada vid fall. Du lär dig falltekniker, får bättre balans och kommer bli
@@ -48,16 +48,16 @@ export default function FallSafetyForTheElderlyPage() {
 
 				<h2 className="mt-5 text-xl font-bold underline">Anmälan</h2>
 				<p>
-					Anmälan och frågor sker till Emma Bönnestig, tfn:{' '}
+					Anmälan och frågor sker till Emma Bönnestig, tfn:
 					<a className="text-blue-600 visited:text-purple-600" href="tel:0702315117">
 						070-231 51 17
-					</a>{' '}
-					eller via e-post till{' '}
+					</a>
+					eller via e-post till
 					<a
 						className="text-blue-600 visited:text-purple-600"
 						href="mailto:trollhattansjk@gmail.com">
 						trollhattansjk@gmail.com
-					</a>{' '}
+					</a>
 					<br />
 					Max antal deltagare är 15 stycken. Vid mindre än 5 anmälda kan kursen komma att ställas
 					in.

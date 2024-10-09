@@ -11,7 +11,7 @@ export default function MembershipPage() {
 				<MembershipForm />
 				<p>
 					För att bli medlem hos oss behöver du klicka på knappen ovan eller fylla i en blankett som
-					finns i vår dojo/träningslokal alternativt skriva ut den här:{' '}
+					finns i vår dojo/träningslokal alternativt skriva ut den här:
 					<Link
 						className="text-blue-600 visited:text-purple-600"
 						href="/documents/MEDLEMSINFO-2023.pdf"

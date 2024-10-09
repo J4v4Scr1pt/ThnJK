@@ -16,7 +16,6 @@ export default function CompetitionCalendarPage() {
 					godkänna eller betala anmälan om man inte kan visa upp kvitto/bevis på att man själv
 					betalt in hela avgiften till Trollhättans Judoklubb.
 					<b className="text-danger-400 underline">
-						{' '}
 						Anmälan i god tid och avanmälan med giltigt skäl stöttar vi. Sen anmälan och ogiltig
 						avanmälan/ej dyker upp stöttar vi inte, utan medlemmen får stå för alla avgifter.
 					</b>

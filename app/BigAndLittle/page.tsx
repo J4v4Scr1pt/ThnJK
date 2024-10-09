@@ -48,8 +48,7 @@ export default function BigAndLittlePage() {
 				<p>Vi som leder gruppen heter Jim och Nathalie.</p>
 
 				<p>
-					<span className="font-bold">Frågor?</span> Frågor sker till Jim eller Nathalie via e-post
-					till:{' '}
+					<strong>Frågor?</strong> Frågor sker till Jim eller Nathalie via e-post till:
 					<a
 						className="text-blue-600 visited:text-purple-600"
 						href="mailto:trollhattansjk@gmail.com">

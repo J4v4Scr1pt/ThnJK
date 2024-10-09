@@ -8,12 +8,6 @@ import {
 	NavbarMenu,
 	NavbarMenuItem,
 	NavbarMenuToggle,
-	Dropdown,
-	DropdownTrigger,
-	DropdownMenu,
-	DropdownItem,
-	Avatar,
-	Badge,
 	Accordion,
 	AccordionItem,
 } from '@nextui-org/react';
@@ -159,7 +153,7 @@ export default function NavbarComp() {
 							<Link
 								className="w-full"
 								color="foreground"
-								href="#"
+								href="/AboutTheClub"
 								onClick={() => setIsMenuOpen((prev) => !prev)}>
 								Om klubben
 							</Link>

@@ -2,6 +2,7 @@ import { Dropdown, DropdownTrigger, DropdownMenu, DropdownItem } from '@nextui-o
 import { NavbarItem } from '@nextui-org/navbar';
 import { Button } from '@nextui-org/button';
 import { Icon } from '@iconify/react';
+import Link from 'next/link';
 
 export function InfoDropdown() {
 	const icons = {
@@ -34,37 +35,49 @@ export function InfoDropdown() {
 					base: 'gap-4',
 				}}>
 				<DropdownItem
+					as={Link}
 					key="about"
+					href="/AboutTheClub"
 					description="Information till våra medlemmar och deras föräldrar"
 					startContent={icons.docs}>
 					Om klubben
 				</DropdownItem>
 				<DropdownItem
+					as={Link}
 					key="links"
+					href=""
 					description="Beskrivning om Judons bakgrund och nyttiga länkar"
 					startContent={icons.judo}>
 					Vad är Judo/Länkar
 				</DropdownItem>
 				<DropdownItem
+					as={Link}
 					key="people_panel"
+					href=""
 					description="Våra tränare och styrelsemedlemmar"
 					startContent={icons.peoplePanel}>
 					Tränare & Styrelsen
 				</DropdownItem>
 				<DropdownItem
+					as={Link}
 					key="policys"
+					href=""
 					description="Policys avseende avgifter och ledare vid läger och tävling"
 					startContent={icons.policy}>
 					Policys
 				</DropdownItem>
 				<DropdownItem
+					as={Link}
 					key="no_drugs"
+					href=""
 					description="Information om hur vi jobbar med doping"
 					startContent={icons.syringe}>
 					Vaccinerad Klubb
 				</DropdownItem>
 				<DropdownItem
+					as={Link}
 					key="inclusive_club"
+					href=""
 					description="Information om hur vi jobbar med jämställdhet"
 					startContent={icons.gender}>
 					Inkluderings och jämställdhetsplan
