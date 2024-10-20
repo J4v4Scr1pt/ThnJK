@@ -27,7 +27,7 @@ export default function VaccinatedClubPage() {
 					<CardBody>
 						<Image
 							{...{
-								alt: 'INFO-skarmdump-2023',
+								alt: 'vaccinerad klubb',
 								src: VaccinatedClub,
 								placeholder: 'blur',
 								priority: true,

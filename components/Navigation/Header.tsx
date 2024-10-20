@@ -86,6 +86,14 @@ export default function NavbarComp() {
 						Falltryghet för äldre
 					</Link>
 				</NavbarItem>
+				<NavbarItem isActive={currentPath === '/AJudo'}>
+					<Link
+						aria-current={currentPath === '/AJudo'}
+						className="flex gap-2 text-inherit"
+						href="AJudo">
+						A-Judo: Anpassad Judo för Alla
+					</Link>
+				</NavbarItem>
 			</NavbarContent>
 			<NavbarContent
 				className="flex h-12 max-w-fit items-center justify-between gap-0 rounded-full px-3 lg:bg-content2 lg:px-3 lg:dark:bg-content1"
@@ -216,6 +224,16 @@ export default function NavbarComp() {
 						color="foreground"
 						href="FallSafetyForTheElderly">
 						Falltryghet för äldre
+					</Link>
+				</NavbarMenuItem>
+				<NavbarMenuItem isActive={currentPath === '/FallSafetyForTheElderly'}>
+					<Link
+						onClick={() => setIsMenuOpen((prev) => !prev)}
+						aria-current={currentPath === '/AJudo'}
+						className="w-full"
+						color="foreground"
+						href="AJudo">
+						A-Judo: Anpassad Judo för Alla
 					</Link>
 				</NavbarMenuItem>
 			</NavbarMenu>
