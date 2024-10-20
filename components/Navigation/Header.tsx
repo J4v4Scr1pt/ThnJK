@@ -86,19 +86,6 @@ export default function NavbarComp() {
 						Falltryghet för äldre
 					</Link>
 				</NavbarItem>
-				{/* <NavbarItem>
-					<Link className="flex gap-2 text-inherit" href="#">
-						Kontakt och faktauppgifter
-					</Link>
-				</NavbarItem> */}
-				<NavbarItem isActive={currentPath === '/AssociationDocuments'}>
-					<Link
-						aria-current={currentPath === '/AssociationDocuments'}
-						className="flex gap-2 text-inherit"
-						href="/AssociationDocuments">
-						Föreningsdokument
-					</Link>
-				</NavbarItem>
 			</NavbarContent>
 			<NavbarContent
 				className="flex h-12 max-w-fit items-center justify-between gap-0 rounded-full px-3 lg:bg-content2 lg:px-3 lg:dark:bg-content1"
@@ -106,41 +93,6 @@ export default function NavbarComp() {
 				<NavbarItem className="flex">
 					<ThemeSwitcher />
 				</NavbarItem>
-				{/* <NavbarItem className="ml-2">
-					<Dropdown placement="bottom-end">
-						<DropdownTrigger>
-							<button className="mt-1 h-8 w-8 outline-none transition-transform">
-								<Badge
-									className="border-transparent"
-									color="success"
-									content=""
-									placement="bottom-right"
-									shape="circle"
-									size="sm">
-									<Avatar
-										size="sm"
-										src="https://t4.ftcdn.net/jpg/01/53/91/51/360_F_153915143_Uc6ryraafkZMONgDzCIGyYX8nCTuLVyg.jpg"
-									/>
-								</Badge>
-							</button>
-						</DropdownTrigger>
-						<DropdownMenu aria-label="Profile Actions" variant="flat">
-							<DropdownItem key="profile" className="h-14 gap-2">
-								<p className="font-semibold">Signed in as</p>
-								<p className="font-semibold">johndoe@example.com</p>
-							</DropdownItem>
-							<DropdownItem key="settings">My Settings</DropdownItem>
-							<DropdownItem key="team_settings">Team Settings</DropdownItem>
-							<DropdownItem key="analytics">Analytics</DropdownItem>
-							<DropdownItem key="system">System</DropdownItem>
-							<DropdownItem key="configurations">Configurations</DropdownItem>
-							<DropdownItem key="help_and_feedback">Help & Feedback</DropdownItem>
-							<DropdownItem key="logout" color="danger">
-								Log Out
-							</DropdownItem>
-						</DropdownMenu>
-					</Dropdown>
-				</NavbarItem> */}
 			</NavbarContent>
 
 			{/* Mobile Menu */}
@@ -167,30 +119,51 @@ export default function NavbarComp() {
 							<Link
 								className="w-full"
 								color="foreground"
-								href="#"
+								href="/CoachesAndTheBoard"
 								onClick={() => setIsMenuOpen((prev) => !prev)}>
 								Tränare & Styrelsen
 							</Link>
 							<Link
 								className="w-full"
 								color="foreground"
-								href="#"
+								href="/Policies"
 								onClick={() => setIsMenuOpen((prev) => !prev)}>
 								Policys avseende avgifter och ledare vid läger och tävling
 							</Link>
 							<Link
 								className="w-full"
 								color="foreground"
-								href="#"
+								href="/VaccinatedClub"
 								onClick={() => setIsMenuOpen((prev) => !prev)}>
 								Vaccinerad Klubb
 							</Link>
 							<Link
 								className="w-full"
 								color="foreground"
-								href="#"
+								href="/InclusionAndEqualityPlan"
 								onClick={() => setIsMenuOpen((prev) => !prev)}>
 								Inkluderings och jämställdhetsplan
+							</Link>
+							<Link
+								className="w-full"
+								color="foreground"
+								href="/ProfileClothes"
+								onClick={() => setIsMenuOpen((prev) => !prev)}>
+								Profilkläder
+							</Link>
+							<Link
+								className="w-full"
+								color="foreground"
+								href="/AssociationDocuments"
+								onClick={() => setIsMenuOpen((prev) => !prev)}>
+								Föreningsdokument
+							</Link>
+							<Link
+								className="w-full"
+								color="foreground"
+								href="/ContactAndFactualInformation"
+								onClick={() => setIsMenuOpen((prev) => !prev)}>
+								Kontakt och faktauppgifter
 							</Link>
 						</AccordionItem>
 					</Accordion>
@@ -243,25 +216,6 @@ export default function NavbarComp() {
 						color="foreground"
 						href="FallSafetyForTheElderly">
 						Falltryghet för äldre
-					</Link>
-				</NavbarMenuItem>
-				{/* <NavbarMenuItem>
-					<Link
-						className="w-full"
-						color="foreground"
-						href="#"
-						onClick={() => setIsMenuOpen((prev) => !prev)}>
-						Kontakt och faktauppgifter
-					</Link>
-				</NavbarMenuItem> */}
-				<NavbarMenuItem isActive={currentPath === '/AssociationDocuments'}>
-					<Link
-						onClick={() => setIsMenuOpen((prev) => !prev)}
-						aria-current={currentPath === '/AssociationDocuments'}
-						className="w-full"
-						color="foreground"
-						href="/AssociationDocuments">
-						Föreningsdokument
 					</Link>
 				</NavbarMenuItem>
 			</NavbarMenu>

@@ -6,8 +6,7 @@ export default function CompetitionCalendarPage() {
 	return (
 		<div className="ml-auto mr-auto max-w-[1200px] p-3">
 			<section>
-				<h1 className="text-3xl">Tävlingskalender</h1>
-				<br />
+				<h1 className="mb-6 text-3xl">Tävlingskalender</h1>
 				<p>
 					<strong>Förtydligande om avgifter:</strong> Från och med höstterminen 2023 gäller att man
 					anmäler sig före deadline i Smoothcomp för Early bird avgift om det finns eller standard
@@ -27,8 +26,8 @@ export default function CompetitionCalendarPage() {
 						med Smoothcomp be ledarna på klubben om hjälp.
 					</li>
 					<li>
-						Alla anmälningsavgifter på <b>prioriterad</b> tävling/läger betalas av klubben. OM
-						anmälan är gjord före utgången av Early/Standard avgift.
+						Alla anmälningsavgifter på <strong>prioriterad</strong> tävling/läger betalas av
+						klubben. OM anmälan är gjord före utgången av Early/Standard avgift.
 					</li>
 					<li>Läs vår policy avseende avgifter och ledare vid läger och tävling.</li>
 				</ul>

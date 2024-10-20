@@ -3,30 +3,27 @@ export default function AboutTheClubPage() {
 		<div className="ml-auto mr-auto max-w-[1200px] p-3">
 			<section>
 				<h1 className="text-3xl">Information</h1> <br />
-				<span className="font-bold">
+				<p className="font-bold">
 					Här har vi samlat information till våra medlemmar och deras föräldrar.
-				</span>
-				<br />
+				</p>
 				<br />
 				<h2 className="font-bold">Vår klubb:</h2>
-				<span>
+				<p>
 					Trollhättans Judoklubb är en modern och lärande idrottsförening, där alla oavsett
 					bakgrund, hudfärg, könsidentitet, religion, talang och ekonomisk förmåga skall känna sig
 					inkluderade och likabehandlade. Vi är även en tävlingsklubb vilket innebär att vi
 					uppmuntrar alla att tävla, från nybörjare till erfarna utövare. Detta görs utan tvång och
 					utan att toppa vårt lag, eftersom vi tror att alla kan växa och utvecklas.
-				</span>
+				</p>
 				<br />
-				<br />
-				<span>
+				<p>
 					Klubben anordnar egna tävlingar för att ge alla barn och ungdomar möjlighet att kunna
 					pröva på att tävla på hemmaplan. För det behövs tränare, domare, funktionärer, sponsorer,
 					sjukvårdare, cafépersonal med flera. Vi välkomnar alla medlemmar och föräldrar att bidra
 					och hjälpa till.
-				</span>
+				</p>
 				<br />
-				<br />
-				<span>
+				<p>
 					Våra egna tävlingar är även viktiga för klubbens ekonomi och möjliggör att vi kan
 					fortsätta arrangera tävlingar, åka på andra tävlingar och träningsläger. Vi föredrar att
 					engagera oss några gånger per år eftersom det ger våra barn och ungdomar viktig
@@ -34,28 +31,26 @@ export default function AboutTheClubPage() {
 					liknade. Utöver våra egna tävlingar åker vi till andra tävlingar och läger i och utanför
 					vårt distrikt. Vi försöker att samåka och mötas upp innan vi åker i väg. I dojon finns
 					information om varje tävling och läger samt vår tävlingspolicy.
-				</span>
-				<br />
+				</p>
 				<br />
 			</section>
 			<section>
 				<h2 className="font-bold">Våra Tävlingar:</h2>
-				<span className="font-bold">Lilla Trollträffen </span>
-				<span>
+				<p className="font-bold">Lilla Trollträffen </p>
+				<p>
 					sker i vår egen dojo 4-5 gånger per år och är en nybörjartävling för enbart dem med gult
 					bälte. Här får man möjlighet att testa på att tävla i en trygg och bekant atmosfär.
 					Tävlingsledningen och coacher består ofta våra ungdomar med lite mer tävlingserfarenhet.
-				</span>
-				<br /> <br />
-				<span className="font-bold">Trollträffen </span>
-				<span>
+				</p>
+				<br />
+				<p className="font-bold">Trollträffen </p>
+				<p>
 					är en större tävling som kräver tävlingserfarenhet. Tävlingen riktar sig först och främst
 					till barn och ungdomar men tävlingen vänder sig även till vuxna. Här kan alla från orange
 					bälte tävla.
-				</span>
+				</p>
 				<br />
-				<br />
-				<span className="font-bold">Våra avgifter: </span>
+				<p className="font-bold">Våra avgifter: </p>
 				<ul className="list-disc pl-6">
 					<li>
 						<strong>Medlemsavgift: 200 kr per person och år. </strong>
@@ -90,32 +85,28 @@ export default function AboutTheClubPage() {
 					</li>
 				</ul>
 				<br />
-				<span>
+				<p>
 					<strong>*</strong>Ett år består av två terminer, vår- och hösttermin.
-				</span>
+				</p>
 				<br />
-				<br />
-				<span>
+				<p>
 					Del av medlemsavgift och/eller terminsavgift återbetalas ej när medlem slutar träna
 					och/eller avslutar sitt medlemskap under pågående termin.
-				</span>
+				</p>
 				<br />
-				<br />
-				<span className="font-bold">Inbetalning:</span>
-				<br />
-				<span>
+				<p className="font-bold">Inbetalning:</p>
+				<p>
 					Via bankgiro 5119-9685 eller Swish 123 414 9076 Ange namn och syfte till exempel: Anna
 					Andersson Terminsavgift HT-24
-				</span>
+				</p>
 			</section>
-			<br />
 			<br />
 			<section>
 				<h2 className="font-bold">Graderingar:</h2>
-				<span>
+				<p>
 					När man börjar med judo startar man med vitt bälte. Därefter graderar man sig i följande
 					skala:
-				</span>
+				</p>
 				<br />
 				<ul>
 					<li>Gult bälte = 5 KYU</li>
@@ -125,15 +116,14 @@ export default function AboutTheClubPage() {
 					<li>Brunt bälte = 1 KYU</li>
 				</ul>
 				<br />
-				<span>
+				<p>
 					Mellan dessa graderingar genomförs ”halvgraderingar” (färgat band eller tvåfärgat bälte)
-				</span>
+				</p>
 				<br />
-				<br />
-				<span>
+				<p>
 					Svart bälte = 1 DAN. Det finns 10 DAN grader och alla har svart bälte. Dock kan man från 6
 					till 8 DAN bära röd/vitt bälte. Från 9-10 DAN kan man bära helt rött bälte.
-				</span>
+				</p>
 				<br />
 				<strong>
 					I Trollhättans judoklubb är det din ansvariga tränare som bestämmer när du skall gradera

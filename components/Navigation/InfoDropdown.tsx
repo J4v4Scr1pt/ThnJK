@@ -13,6 +13,9 @@ export function InfoDropdown() {
 		policy: <Icon className="text-primary-500" icon="carbon:policy" width={24} />,
 		judo: <Icon className="text-primary-500" icon="emojione-monotone:martial-arts-uniform" width={24} />,
 		peoplePanel: <Icon className="text-primary-500" icon="fa6-solid:people-line" width={24} />,
+		profileClothes: <Icon className="text-primary-500" icon="game-icons:clothes" width={24} />,
+		documents: <Icon className="text-primary-500" icon="carbon:document-pdf" width={24} />,
+		contact: <Icon className="text-primary-500" icon="mdi:contact-mail-outline" width={24} />,
 	};
 	return (
 		<Dropdown>
@@ -53,7 +56,7 @@ export function InfoDropdown() {
 				<DropdownItem
 					as={Link}
 					key="people_panel"
-					href=""
+					href="/CoachesAndTheBoard"
 					description="Våra tränare och styrelsemedlemmar"
 					startContent={icons.peoplePanel}>
 					Tränare & Styrelsen
@@ -61,7 +64,7 @@ export function InfoDropdown() {
 				<DropdownItem
 					as={Link}
 					key="policys"
-					href=""
+					href="/Policies"
 					description="Policys avseende avgifter och ledare vid läger och tävling"
 					startContent={icons.policy}>
 					Policys
@@ -69,7 +72,7 @@ export function InfoDropdown() {
 				<DropdownItem
 					as={Link}
 					key="no_drugs"
-					href=""
+					href="/VaccinatedClub"
 					description="Information om hur vi jobbar med doping"
 					startContent={icons.syringe}>
 					Vaccinerad Klubb
@@ -77,10 +80,34 @@ export function InfoDropdown() {
 				<DropdownItem
 					as={Link}
 					key="inclusive_club"
-					href=""
+					href="/InclusionAndEqualityPlan"
 					description="Information om hur vi jobbar med jämställdhet"
 					startContent={icons.gender}>
 					Inkluderings och jämställdhetsplan
+				</DropdownItem>
+				<DropdownItem
+					as={Link}
+					key="profile_clothes"
+					href="/ProfileClothes"
+					description="Våra profil kläder i samarbete med Excite"
+					startContent={icons.profileClothes}>
+					Profilkläder
+				</DropdownItem>
+				<DropdownItem
+					as={Link}
+					key="association_documents"
+					href="/AssociationDocuments"
+					description="Här kan du läsa föreningens olika dokument"
+					startContent={icons.documents}>
+					Föreningsdokument
+				</DropdownItem>
+				<DropdownItem
+					as={Link}
+					key="contact_factual"
+					href="/ContactAndFactualInformation"
+					description="Våra kontakt samt faktura uppgifter"
+					startContent={icons.contact}>
+					Kontakt och faktauppgifter
 				</DropdownItem>
 			</DropdownMenu>
 		</Dropdown>
