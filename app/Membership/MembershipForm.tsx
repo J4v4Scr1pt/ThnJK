@@ -14,9 +14,15 @@ import {
 import { useFormState, useFormStatus } from 'react-dom';
 import { membershipSchema } from './membershipSchema';
 import { sendEmail } from './actions';
+import { useSearchParams } from 'next/navigation';
 
 export function MembershipForm() {
-	const { isOpen, onOpen, onClose, onOpenChange } = useDisclosure();
+	const searchParams = useSearchParams();
+	const showModal = searchParams.get('showMembershipForm');
+	const params = new URLSearchParams(searchParams);
+	const { isOpen, onClose } = useDisclosure({
+		isOpen: !!showModal,
+	});
 	const onSubmitAction = async (prevState: formState, data: FormData) => {
 		const formData = Object.fromEntries(data);
 		const parsed = membershipSchema.safeParse(formData);
@@ -28,18 +34,32 @@ export function MembershipForm() {
 		if (parsed.success) {
 			const response = await sendEmail(parsed.data);
 			//TODO fix an nice sccess message thing
-			if (response?.success) onClose();
+			if (response?.success) onCloseEvent();
 		}
 		return null;
+	};
+
+	const onCloseEvent = () => {
+		params.delete('showMembershipForm');
+		window.history.replaceState(null, '', 'Membership');
+		onClose();
 	};
 
 	const [formState, formAction] = useFormState(onSubmitAction, null);
 	return (
 		<>
-			<Button className="my-4" onPress={onOpen} color="primary">
+			<Button
+				className="my-4"
+				// onPress={onOpen}
+				onPress={() => window.history.replaceState(null, 'Membership', '?showMembershipForm=true')}
+				color="primary">
 				Bli medlem
 			</Button>
-			<Modal isOpen={isOpen} onOpenChange={onOpenChange} isDismissable={false} scrollBehavior="inside">
+			<Modal
+				isOpen={isOpen}
+				onOpenChange={() => onCloseEvent()}
+				isDismissable={false}
+				scrollBehavior="inside">
 				<ModalContent as="form" action={formAction}>
 					{(onClose) => (
 						<>
@@ -164,7 +184,7 @@ export function MembershipForm() {
 									/>
 								</div>
 							</ModalBody>
-							<FooterContent onClose={onClose} />
+							<FooterContent onCloseEvent={onCloseEvent} />
 						</>
 					)}
 				</ModalContent>
@@ -173,11 +193,11 @@ export function MembershipForm() {
 	);
 }
 
-const FooterContent = ({ onClose }: { onClose: () => void }) => {
+const FooterContent = ({ onCloseEvent }: { onCloseEvent: () => void }) => {
 	const { pending } = useFormStatus();
 	return (
 		<ModalFooter>
-			<Button isLoading={pending} onPress={onClose}>
+			<Button isLoading={pending} onPress={onCloseEvent}>
 				Avbryt
 			</Button>
 			<Button isLoading={pending} color="primary" type="submit">
