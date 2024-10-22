@@ -15,8 +15,10 @@ import { useFormState, useFormStatus } from 'react-dom';
 import { membershipSchema } from './membershipSchema';
 import { sendEmail } from './actions';
 import { useSearchParams } from 'next/navigation';
+import { useMediaQuery } from 'usehooks-ts';
 
 export function MembershipForm() {
+	const matches = useMediaQuery('(min-width: 768px)');
 	const searchParams = useSearchParams();
 	const showModal = searchParams.get('showMembershipForm');
 	const params = new URLSearchParams(searchParams);
@@ -50,18 +52,18 @@ export function MembershipForm() {
 		<>
 			<Button
 				className="my-4"
-				// onPress={onOpen}
 				onPress={() => window.history.replaceState(null, 'Membership', '?showMembershipForm=true')}
 				color="primary">
 				Bli medlem
 			</Button>
 			<Modal
 				isOpen={isOpen}
+				size={matches ? 'md' : 'full'}
 				onOpenChange={() => onCloseEvent()}
 				isDismissable={false}
 				scrollBehavior="inside">
 				<ModalContent as="form" action={formAction}>
-					{(onClose) => (
+					{() => (
 						<>
 							<ModalHeader className="flex flex-col gap-1">Bli medlem</ModalHeader>
 							<ModalBody>

@@ -55,7 +55,7 @@ export default function VaccinatedClubPage() {
 					showAnchorIcon
 					isExternal
 					href="https://www.antidoping.se/dispens-laekemedelssoek/roed-groena-listan/">
-					Röd-gräna antidoping listan
+					Röd-gröna antidoping listan
 				</Link>
 				<br />
 				<br />
