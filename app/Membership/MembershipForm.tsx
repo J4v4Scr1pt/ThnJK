@@ -56,10 +56,9 @@ export function MembershipForm() {
 			</Button>
 			<Modal
 				isOpen={isOpen}
-				placement="top"
 				onOpenChange={() => onCloseEvent()}
 				isDismissable={false}
-				scrollBehavior="inside">
+				scrollBehavior="outside">
 				<ModalContent as="form" action={formAction}>
 					{() => (
 						<>
