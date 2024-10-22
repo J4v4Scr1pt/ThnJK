@@ -56,7 +56,7 @@ export function MembershipForm() {
 			</Button>
 			<Modal
 				isOpen={isOpen}
-				placement="center"
+				className="min-h-[500px]"
 				onOpenChange={() => onCloseEvent()}
 				isDismissable={false}
 				scrollBehavior="inside">
