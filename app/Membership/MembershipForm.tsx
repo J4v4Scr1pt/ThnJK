@@ -15,10 +15,8 @@ import { useFormState, useFormStatus } from 'react-dom';
 import { membershipSchema } from './membershipSchema';
 import { sendEmail } from './actions';
 import { useSearchParams } from 'next/navigation';
-import { useMediaQuery } from 'usehooks-ts';
 
 export function MembershipForm() {
-	const matches = useMediaQuery('(min-width: 768px)');
 	const searchParams = useSearchParams();
 	const showModal = searchParams.get('showMembershipForm');
 	const params = new URLSearchParams(searchParams);
@@ -58,7 +56,7 @@ export function MembershipForm() {
 			</Button>
 			<Modal
 				isOpen={isOpen}
-				size={matches ? 'md' : 'full'}
+				placement="center"
 				onOpenChange={() => onCloseEvent()}
 				isDismissable={false}
 				scrollBehavior="inside">

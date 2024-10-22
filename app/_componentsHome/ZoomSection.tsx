@@ -65,7 +65,7 @@ export default function ZoomSection() {
 						<motion.div
 							key={index}
 							style={{ scale }}
-							className="absolute top-0 flex h-full w-full items-center justify-center ">
+							className="absolute top-0 flex h-full w-full items-center justify-center">
 							<div
 								className={cn('relative h-[25vh] w-[25vw]', {
 									'-top-[27vh] left-[5vw] h-[25vh] w-[35vw]': index + 1 === 2,
