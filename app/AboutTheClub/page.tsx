@@ -2,7 +2,7 @@ export default function AboutTheClubPage() {
 	return (
 		<div className="ml-auto mr-auto max-w-[1200px] p-3">
 			<section>
-				<h1 className="text-3xl">Information</h1> <br />
+				<h1 className="text-3xl">Om klubben</h1> <br />
 				<p className="font-bold">
 					Här har vi samlat information till våra medlemmar och deras föräldrar.
 				</p>

@@ -1,22 +1,13 @@
 'use client';
 
-import {
-	Navbar,
-	NavbarBrand,
-	NavbarContent,
-	NavbarItem,
-	NavbarMenu,
-	NavbarMenuItem,
-	NavbarMenuToggle,
-	Accordion,
-	AccordionItem,
-} from '@nextui-org/react';
+import { Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle } from '@nextui-org/navbar';
 import { TjkIcon } from './TjkIcon';
 import ThemeSwitcher from '../ThemeSwitcher';
 import { InfoDropdown } from './InfoDropdown';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import { useState } from 'react';
+import { MobileMenu } from './MobileMenu';
 
 export default function NavbarComp() {
 	const pathname = usePathname();
@@ -103,140 +94,7 @@ export default function NavbarComp() {
 				</NavbarItem>
 			</NavbarContent>
 
-			{/* Mobile Menu */}
-			<NavbarMenu>
-				<NavbarMenuItem>
-					<Accordion className="p-0" itemClasses={{ title: 'font-normal text-medium' }}>
-						<AccordionItem
-							title="Information"
-							classNames={{ content: 'flex flex-col', trigger: 'p-0' }}>
-							<Link
-								className="w-full"
-								color="foreground"
-								href="/AboutTheClub"
-								onClick={() => setIsMenuOpen((prev) => !prev)}>
-								Om klubben
-							</Link>
-							<Link
-								className="w-full"
-								color="foreground"
-								href="/WhatIsJudo"
-								onClick={() => setIsMenuOpen((prev) => !prev)}>
-								Vad är Judo/Länkar
-							</Link>
-							<Link
-								className="w-full"
-								color="foreground"
-								href="/CoachesAndTheBoard"
-								onClick={() => setIsMenuOpen((prev) => !prev)}>
-								Tränare & Styrelsen
-							</Link>
-							<Link
-								className="w-full"
-								color="foreground"
-								href="/Policies"
-								onClick={() => setIsMenuOpen((prev) => !prev)}>
-								Policys avseende avgifter och ledare vid läger och tävling
-							</Link>
-							<Link
-								className="w-full"
-								color="foreground"
-								href="/VaccinatedClub"
-								onClick={() => setIsMenuOpen((prev) => !prev)}>
-								Vaccinerad Klubb
-							</Link>
-							<Link
-								className="w-full"
-								color="foreground"
-								href="/InclusionAndEqualityPlan"
-								onClick={() => setIsMenuOpen((prev) => !prev)}>
-								Inkluderings och jämställdhetsplan
-							</Link>
-							<Link
-								className="w-full"
-								color="foreground"
-								href="/ProfileClothes"
-								onClick={() => setIsMenuOpen((prev) => !prev)}>
-								Profilkläder
-							</Link>
-							<Link
-								className="w-full"
-								color="foreground"
-								href="/AssociationDocuments"
-								onClick={() => setIsMenuOpen((prev) => !prev)}>
-								Föreningsdokument
-							</Link>
-							<Link
-								className="w-full"
-								color="foreground"
-								href="/ContactAndFactualInformation"
-								onClick={() => setIsMenuOpen((prev) => !prev)}>
-								Kontakt och faktauppgifter
-							</Link>
-						</AccordionItem>
-					</Accordion>
-				</NavbarMenuItem>
-				<NavbarMenuItem isActive={currentPath === '/Membership'}>
-					<Link
-						onClick={() => setIsMenuOpen((prev) => !prev)}
-						aria-current={currentPath === '/Membership'}
-						className="w-full"
-						color="primary"
-						href="Membership">
-						Medlemskap
-					</Link>
-				</NavbarMenuItem>
-				<NavbarMenuItem isActive={currentPath === '/TrainingTimes'}>
-					<Link
-						onClick={() => setIsMenuOpen((prev) => !prev)}
-						aria-current={currentPath === '/TrainingTimes'}
-						className="w-full"
-						color="foreground"
-						href="TrainingTimes">
-						Träningstider
-					</Link>
-				</NavbarMenuItem>
-				<NavbarMenuItem isActive={currentPath === '/CompetitionCalendar'}>
-					<Link
-						onClick={() => setIsMenuOpen((prev) => !prev)}
-						aria-current={currentPath === '/CompetitionCalendar'}
-						className="w-full"
-						color="foreground"
-						href="/CompetitionCalendar">
-						Tävlingskalender
-					</Link>
-				</NavbarMenuItem>
-				<NavbarMenuItem isActive={currentPath === '/BigAndLittle'}>
-					<Link
-						onClick={() => setIsMenuOpen((prev) => !prev)}
-						aria-current={currentPath === '/BigAndLittle'}
-						className="w-full"
-						color="foreground"
-						href="BigAndLittle">
-						Stor & Liten
-					</Link>
-				</NavbarMenuItem>
-				<NavbarMenuItem isActive={currentPath === '/FallSafetyForTheElderly'}>
-					<Link
-						onClick={() => setIsMenuOpen((prev) => !prev)}
-						aria-current={currentPath === '/FallSafetyForTheElderly'}
-						className="w-full"
-						color="foreground"
-						href="FallSafetyForTheElderly">
-						Falltryghet för äldre
-					</Link>
-				</NavbarMenuItem>
-				<NavbarMenuItem isActive={currentPath === '/FallSafetyForTheElderly'}>
-					<Link
-						onClick={() => setIsMenuOpen((prev) => !prev)}
-						aria-current={currentPath === '/AJudo'}
-						className="w-full"
-						color="foreground"
-						href="AJudo">
-						A-Judo: Anpassad Judo för Alla
-					</Link>
-				</NavbarMenuItem>
-			</NavbarMenu>
+			<MobileMenu currentPath={currentPath} setIsMenuOpen={setIsMenuOpen} />
 		</Navbar>
 	);
 }
