@@ -179,7 +179,7 @@ export function MobileMenu({
 					Falltryghet för äldre
 				</Link>
 			</NavbarMenuItem>
-			<NavbarMenuItem isActive={currentPath === '/FallSafetyForTheElderly'}>
+			<NavbarMenuItem isActive={currentPath === '/AJudo'}>
 				<Link
 					onClick={() => setIsMenuOpen((prev) => !prev)}
 					aria-current={currentPath === '/AJudo'}
