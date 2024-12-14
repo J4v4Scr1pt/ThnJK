@@ -1,8 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import type { Config } from 'tailwindcss';
 import { nextui } from '@nextui-org/react';
-import svgToDataUri from 'mini-svg-data-uri';
-// eslint-disable-next-line @typescript-eslint/no-require-imports
+const svgToDataUri = require('mini-svg-data-uri');
 const { default: flattenColorPalette } = require('tailwindcss/lib/util/flattenColorPalette');
 
 const config: Config = {
