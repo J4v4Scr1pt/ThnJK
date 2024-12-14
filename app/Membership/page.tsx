@@ -20,7 +20,6 @@ export default function MembershipPage() {
 						className="text-blue-600 visited:text-purple-600"
 						href="/documents/MEDLEMSINFO-2023.pdf"
 						download="MEDLEMSINFO-2023.pdf"
-						locale={false}
 						rel="noopener noreferrer"
 						target="_blank"
 						aria-label="Downlod MEDLEMSINFO-2023">

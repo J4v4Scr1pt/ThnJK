@@ -1,4 +1,5 @@
 'use client';
+import { useActionState } from 'react';
 import {
 	Button,
 	DatePicker,
@@ -11,10 +12,11 @@ import {
 	Textarea,
 	useDisclosure,
 } from '@nextui-org/react';
-import { useFormState, useFormStatus } from 'react-dom';
+import { useFormStatus } from 'react-dom';
 import { membershipSchema } from './membershipSchema';
 import { sendEmail } from './actions';
 import { useSearchParams } from 'next/navigation';
+import { FormState } from './types';
 
 export function MembershipForm() {
 	const searchParams = useSearchParams();
@@ -23,7 +25,7 @@ export function MembershipForm() {
 	const { isOpen, onClose } = useDisclosure({
 		isOpen: !!showModal,
 	});
-	const onSubmitAction = async (prevState: formState, data: FormData) => {
+	const onSubmitAction = async (prevState: FormState, data: FormData) => {
 		const formData = Object.fromEntries(data);
 		const parsed = membershipSchema.safeParse(formData);
 		if (!parsed.success) {
@@ -45,7 +47,7 @@ export function MembershipForm() {
 		onClose();
 	};
 
-	const [formState, formAction] = useFormState(onSubmitAction, null);
+	const [formState, formAction] = useActionState(onSubmitAction, null);
 	return (
 		<>
 			<Button
@@ -55,11 +57,13 @@ export function MembershipForm() {
 				Bli medlem
 			</Button>
 			<Modal
+				as="form"
+				action={formAction}
 				isOpen={isOpen}
 				onOpenChange={() => onCloseEvent()}
 				isDismissable={false}
 				scrollBehavior="outside">
-				<ModalContent as="form" action={formAction}>
+				<ModalContent>
 					{() => (
 						<>
 							<ModalHeader className="flex flex-col gap-1">Bli medlem</ModalHeader>

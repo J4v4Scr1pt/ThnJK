@@ -1,6 +1,6 @@
 'use client';
 import Image from 'next/image';
-import { useTransform, motion, useScroll } from 'framer-motion';
+import { useTransform, motion, useScroll, MotionValue } from 'framer-motion';
 import { useRef } from 'react';
 
 const TrainerCard = ({
@@ -19,9 +19,9 @@ const TrainerCard = ({
 	src: string;
 	url?: string;
 	color: string;
-	progress: any;
-	range: any;
-	targetScale: any;
+	progress: MotionValue<number>;
+	range: [number, number];
+	targetScale: number;
 }) => {
 	const container = useRef(null);
 	const { scrollYProgress } = useScroll({
