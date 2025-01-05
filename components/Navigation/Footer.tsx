@@ -71,7 +71,7 @@ export function Footer() {
 				</div>
 				<Spacer y={2} />
 				<p className="mt-1 text-center text-tiny text-default-400 sm:text-small">
-					&copy; 2024 ThnJK. All rights reserved.
+					&copy; 2025 ThnJK. All rights reserved.
 				</p>
 			</div>
 		</footer>
