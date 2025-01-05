@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import type { Config } from 'tailwindcss';
 import { nextui } from '@nextui-org/react';
 const svgToDataUri = require('mini-svg-data-uri');
@@ -110,8 +111,8 @@ const config: Config = {
 };
 
 function addVariablesForColors({ addBase, theme }: any) {
-	let allColors = flattenColorPalette(theme('colors'));
-	let newVars = Object.fromEntries(Object.entries(allColors).map(([key, val]) => [`--${key}`, val]));
+	const allColors = flattenColorPalette(theme('colors'));
+	const newVars = Object.fromEntries(Object.entries(allColors).map(([key, val]) => [`--${key}`, val]));
 
 	addBase({
 		':root': newVars,

@@ -1,9 +1,10 @@
 import Image from 'next/image';
+import dynamic from 'next/dynamic';
 import Link from 'next/link';
 import INFOSkarmdump2023 from '@/public/images/INFO-skarmdump-2023.png';
-import { MembershipForm } from './MembershipForm';
 import { Card, CardBody } from '@nextui-org/card';
 import { Suspense } from 'react';
+const MembershipForm = dynamic(() => import('./MembershipForm').then((x) => x.MembershipForm));
 
 export default function MembershipPage() {
 	return (
@@ -14,13 +15,13 @@ export default function MembershipPage() {
 					<MembershipForm />
 				</Suspense>
 				<p>
-					För att bli medlem hos oss behöver du klicka på knappen ovan eller fylla i en blankett som
-					finns i vår dojo/träningslokal alternativt skriva ut den här:{' '}
+					För att bli medlem hos oss gör du det enklast genom att klicka på knappen ovan eller kan
+					du också fylla i en blankett som finns i vår dojo/träningslokal alternativt skriva ut den
+					här:{' '}
 					<Link
 						className="text-blue-600 visited:text-purple-600"
 						href="/documents/MEDLEMSINFO-2023.pdf"
 						download="MEDLEMSINFO-2023.pdf"
-						locale={false}
 						rel="noopener noreferrer"
 						target="_blank"
 						aria-label="Downlod MEDLEMSINFO-2023">

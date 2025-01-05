@@ -5,11 +5,9 @@ import { useRef } from 'react';
 export function Section({
 	image,
 	description,
-	tag,
 	title,
 }: {
 	image: StaticImageData;
-	tag: string;
 	title: string;
 	description: string;
 }) {

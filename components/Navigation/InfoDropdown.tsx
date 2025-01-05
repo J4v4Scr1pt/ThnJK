@@ -6,11 +6,23 @@ import Link from 'next/link';
 
 const icons = {
 	chevron: <Icon className="text-default-500" icon="solar:alt-arrow-down-linear" width={24} />,
-	docs: <Icon className="text-primary-500" icon="solar:document-text-outline" width={24} />,
+	docs: (
+		<div>
+			<Icon className="text-primary-500" icon="solar:document-text-outline" width={24} />
+		</div>
+	),
 	syringe: <Icon className="text-primary-500" icon="solar:syringe-outline" width={24} />,
 	gender: <Icon className="text-primary-500" icon="icons8:gender" width={24} />,
-	policy: <Icon className="text-primary-500" icon="carbon:policy" width={24} />,
-	judo: <Icon className="text-primary-500" icon="emojione-monotone:martial-arts-uniform" width={24} />,
+	policy: (
+		<div>
+			<Icon className="text-primary-500" icon="carbon:policy" width={24} />
+		</div>
+	),
+	judo: (
+		<div>
+			<Icon className="text-primary-500" icon="emojione-monotone:martial-arts-uniform" width={24} />
+		</div>
+	),
 	peoplePanel: <Icon className="text-primary-500" icon="fa6-solid:people-line" width={24} />,
 	profileClothes: <Icon className="text-primary-500" icon="game-icons:clothes" width={24} />,
 	documents: <Icon className="text-primary-500" icon="carbon:document-pdf" width={24} />,

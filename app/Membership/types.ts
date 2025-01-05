@@ -1,4 +1,4 @@
-type formState = {
+export type FormState = {
 	date?: {
 		_errors: string[];
 	};
@@ -40,7 +40,7 @@ type formState = {
 	};
 } | null;
 
-type membership = {
+export type Membership = {
 	date: string;
 	firstName: string;
 	lastName: string;

@@ -2,7 +2,7 @@
 
 import type { ScrollShadowProps } from '@nextui-org/react';
 import { cn, ScrollShadow } from '@nextui-org/react';
-import { Children, cloneElement, forwardRef } from 'react';
+import { Children, cloneElement, DetailedReactHTMLElement, forwardRef, HTMLAttributes } from 'react';
 
 interface ScrollingBannerProps extends React.HTMLAttributes<HTMLDivElement> {
 	isReverse?: boolean;
@@ -51,11 +51,12 @@ const ScrollingBanner = forwardRef<HTMLDivElement, ScrollingBannerProps>(
 					},
 					className
 				)}
-				style={{
-					// @ts-ignore
-					'--gap': gap,
-					'--duration': `${duration}s`,
-				}}>
+				style={
+					{
+						'--gap': gap,
+						'--duration': `${duration}s`,
+					} as React.CSSProperties
+				}>
 				<div
 					className={cn('flex w-max items-stretch gap-[--gap]', {
 						'flex-col': isVertical,
@@ -65,7 +66,11 @@ const ScrollingBanner = forwardRef<HTMLDivElement, ScrollingBannerProps>(
 						'[animation-direction:reverse]': isReverse,
 						'hover:[animation-play-state:paused]': shouldPauseOnHover,
 					})}>
-					{Children.map(children, (child) => cloneElement(child as any))}
+					{Children.map(children, (child) =>
+						cloneElement(
+							child as DetailedReactHTMLElement<HTMLAttributes<HTMLElement>, HTMLElement>
+						)
+					)}
 				</div>
 			</ScrollShadow>
 		);

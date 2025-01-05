@@ -1,6 +1,8 @@
 'use server';
 
-export async function sendEmail(membership: membership) {
+import { Membership } from './types';
+
+export async function sendEmail(membership: Membership) {
 	const response = await fetch('https://api.web3forms.com/submit', {
 		method: 'POST',
 		headers: {
