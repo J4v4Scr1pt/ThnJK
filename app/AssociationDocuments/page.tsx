@@ -47,12 +47,13 @@ export default function AssociationDocumentsPage() {
 										<DropdownMenu>
 											<DropdownItem
 												as={Link}
+												key="OpenArsmotesprotokoll_TJK_2024"
 												href="/documents/Arsmotesprotokoll_TJK_2024.pdf"
 												target="_blank"
 												aria-label="Open Arsmotesprotokoll_TJK_2024">
 												Öppna
 											</DropdownItem>
-											<DropdownItem>
+											<DropdownItem key="DownloadArsmotesprotokoll_TJK_2024">
 												<Link
 													href="/documents/Arsmotesprotokoll_TJK_2024.pdf"
 													download="Arsmotesprotokoll_TJK_2024.pdf"
@@ -84,7 +85,7 @@ export default function AssociationDocumentsPage() {
 											</Button>
 										</DropdownTrigger>
 										<DropdownMenu>
-											<DropdownItem>
+											<DropdownItem key="OpenVerksamhetsberattelse-2023">
 												<Link
 													className="w-full"
 													href="/documents/Verksamhetsberattelse-2023.pdf"
@@ -95,6 +96,7 @@ export default function AssociationDocumentsPage() {
 											</DropdownItem>
 											<DropdownItem
 												as={Link}
+												key="DownloadVerksamhetsberattelse-2023"
 												href="/documents/Verksamhetsberattelse-2023.pdf"
 												download="Verksamhetsberattelse-2023.pdf"
 												rel="noopener noreferrer"
@@ -125,13 +127,14 @@ export default function AssociationDocumentsPage() {
 										</DropdownTrigger>
 										<DropdownMenu>
 											<DropdownItem
+												key="OpenStadgar_TJK"
 												as={Link}
 												href="/documents/Stadgar_TJK.pdf"
 												target="_blank"
 												aria-label="Open Stadgar_TJK">
 												Öppna
 											</DropdownItem>
-											<DropdownItem>
+											<DropdownItem key="DownloadStadgar_TJK">
 												<Link
 													href="/documents/Stadgar_TJK.pdf"
 													download="Stadgar_TJK.pdf"
