@@ -1,5 +1,5 @@
-import { Link } from '@nextui-org/react';
-import { Card, CardBody } from '@nextui-org/card';
+import { Link } from '@heroui/react';
+import { Card, CardBody } from '@heroui/card';
 import Image from 'next/image';
 import ExiteClothes from '@/public/images/ExiteClothes.jpg';
 

@@ -1,6 +1,6 @@
-import { Dropdown, DropdownTrigger, DropdownMenu, DropdownItem } from '@nextui-org/dropdown';
-import { NavbarItem } from '@nextui-org/navbar';
-import { Button } from '@nextui-org/button';
+import { Dropdown, DropdownTrigger, DropdownMenu, DropdownItem } from '@heroui/dropdown';
+import { NavbarItem } from '@heroui/navbar';
+import { Button } from '@heroui/button';
 import { Icon } from '@iconify/react';
 import Link from 'next/link';
 

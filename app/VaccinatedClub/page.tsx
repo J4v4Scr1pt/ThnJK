@@ -1,7 +1,7 @@
-import { Card, CardBody } from '@nextui-org/card';
+import { Card, CardBody } from '@heroui/card';
 import Image from 'next/image';
 import VaccinatedClub from '@/public/images/VaccinatedClub.png';
-import { Link } from '@nextui-org/link';
+import { Link } from '@heroui/link';
 
 export default function VaccinatedClubPage() {
 	return (

@@ -1,4 +1,4 @@
-import { Sannegarden,  Clarion, Ferno, ThnEnergi } from './Sponsors';
+import { Sannegarden, Clarion, Ferno, ThnEnergi } from './Sponsors';
 import ScrollingBanner from './Scrolling-Banner';
 
 const logos = [

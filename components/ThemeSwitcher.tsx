@@ -1,5 +1,5 @@
 'use client';
-import { Skeleton, Switch } from '@nextui-org/react';
+import { Skeleton, Switch } from '@heroui/react';
 import { useTheme } from 'next-themes';
 import { Icon } from '@iconify/react';
 import { useEffect, useState } from 'react';

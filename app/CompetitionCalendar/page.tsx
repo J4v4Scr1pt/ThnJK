@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Card, CardBody } from '@nextui-org/card';
+import { Card, CardBody } from '@heroui/card';
 import Tavlingskalender from '@/public/images/Tavlingskalender-2025-VAREN.png';
 
 export default function CompetitionCalendarPage() {

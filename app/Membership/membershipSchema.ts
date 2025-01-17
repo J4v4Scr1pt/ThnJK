@@ -12,9 +12,6 @@ export const membershipSchema = z.object({
 	otherInfo: z.nullable(z.string()),
 	relativeName: z.string().trim().min(1, { message: 'Du behöver ange en anhörigs namn' }),
 	relativePhoneNumber: z.string().trim().min(1, { message: 'Du behöver ange en anhörigs telefonnummer' }),
-	relativeSsNumber: z
-		.string()
-		.trim()
-		.min(1, { message: 'Du behöver ange en anhörigs personnummer' }),
+	relativeSsNumber: z.string().trim().min(1, { message: 'Du behöver ange en anhörigs personnummer' }),
 	relativeEmail: z.string().trim().min(1, { message: 'Du behöver ange en anhörigs e-post' }),
 });

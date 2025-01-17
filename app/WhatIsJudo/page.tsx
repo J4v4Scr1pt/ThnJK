@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Card, CardBody } from '@nextui-org/card';
+import { Card, CardBody } from '@heroui/card';
 import MrKano from '@/public/images/MrKano.jpg';
 
 export default function WhatIsJudoPage() {

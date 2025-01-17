@@ -2,8 +2,8 @@
 const nextConfig = {
 	experimental: {
 		optimizePackageImports: [
-			'@nextui-org/*',
-			'@nextui-org/react',
+			'@heroui/*',
+			'@heroui/react',
 			'@iconify/*',
 			'@iconify/react',
 			'framer-motion',

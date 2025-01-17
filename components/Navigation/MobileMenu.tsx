@@ -1,5 +1,5 @@
-import { NavbarMenu, NavbarMenuItem } from '@nextui-org/navbar';
-import { Accordion, AccordionItem } from '@nextui-org/accordion';
+import { NavbarMenu, NavbarMenuItem } from '@heroui/navbar';
+import { Accordion, AccordionItem } from '@heroui/accordion';
 import Link from 'next/link';
 import { Dispatch, SetStateAction } from 'react';
 

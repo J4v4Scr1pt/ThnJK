@@ -1,6 +1,6 @@
 'use client';
 
-import { Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle } from '@nextui-org/navbar';
+import { Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle } from '@heroui/navbar';
 import { TjkIcon } from './TjkIcon';
 import ThemeSwitcher from '../ThemeSwitcher';
 import { InfoDropdown } from './InfoDropdown';

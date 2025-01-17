@@ -11,7 +11,7 @@ import {
 	ModalHeader,
 	Textarea,
 	useDisclosure,
-} from '@nextui-org/react';
+} from '@heroui/react';
 import Form from 'next/form';
 import { membershipSchema } from './membershipSchema';
 import { sendEmail } from './actions';

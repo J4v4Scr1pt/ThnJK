@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Card, CardBody } from '@nextui-org/card';
+import { Card, CardBody } from '@heroui/card';
 import DHallen from '@/public/images/D-hallen.png';
 import AjudoTranare from '@/public/images/A-judo_tranare.png';
 

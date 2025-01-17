@@ -8,7 +8,7 @@ import Picture7 from '@/public/images/7.jpg';
 import Image from 'next/image';
 import { useScroll, useTransform, motion } from 'framer-motion';
 import { useRef } from 'react';
-import { cn } from '@nextui-org/react';
+import { cn } from '@heroui/react';
 
 export default function ZoomSection() {
 	const container = useRef(null);

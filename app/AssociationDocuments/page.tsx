@@ -12,7 +12,7 @@ import {
 	TableColumn,
 	TableHeader,
 	TableRow,
-} from '@nextui-org/react';
+} from '@heroui/react';
 import Link from 'next/link';
 
 export default function AssociationDocumentsPage() {

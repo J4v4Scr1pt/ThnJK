@@ -47,20 +47,20 @@
 		background: transparent;
 	}
 	::-webkit-scrollbar-thumb {
-		background: hsl(var(--nextui-primary-500));
+		background: hsl(var(--heroui-primary-500));
 		border: 4px solid transparent;
 		background-clip: padding-box;
 		border-radius: 100vw;
 	}
 
 	:-webkit-scrollbar-thumb:hover {
-		background: hsl(var(--nextui-primary-700));
+		background: hsl(var(--heroui-primary-700));
 		background-clip: padding-box;
 		border: 1px solid transparent;
 	}
 
 	::-webkit-scrollbar-thumb:active {
-		background: hsl(var(--nextui-primary-200));
+		background: hsl(var(--heroui-primary-200));
 		background-clip: padding-box;
 		border: 1px solid transparent;
 	}

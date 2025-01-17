@@ -1,5 +1,5 @@
 'use client';
-import { cn } from '@nextui-org/react';
+import { cn } from '@heroui/react';
 import { useMotionValue, motion, useMotionTemplate } from 'framer-motion';
 
 export const HeroHighlight = ({

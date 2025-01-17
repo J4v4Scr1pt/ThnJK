@@ -2,7 +2,7 @@ import Image from 'next/image';
 import dynamic from 'next/dynamic';
 import Link from 'next/link';
 import INFOSkarmdump2023 from '@/public/images/INFO-skarmdump-2023.png';
-import { Card, CardBody } from '@nextui-org/card';
+import { Card, CardBody } from '@heroui/card';
 import { Suspense } from 'react';
 const MembershipForm = dynamic(() => import('./MembershipForm').then((x) => x.MembershipForm));
 

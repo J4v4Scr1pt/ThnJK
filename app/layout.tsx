@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
-import { NextuiProvider } from './providers/NextuiProvider';
+import { HerouiProvider } from './providers/HerouiProvider';
 import Header from '@/components/Navigation/Header';
 import { NextThemesProvider } from './providers/NextThemesProvider';
 import { Footer } from '@/components/Navigation/Footer';
@@ -23,7 +23,7 @@ export default function RootLayout({
 	return (
 		<html lang={'sv-SE'} suppressHydrationWarning>
 			<body className={inter.className}>
-				<NextuiProvider>
+				<HerouiProvider>
 					<NextThemesProvider>
 						<Header />
 						<BackgroundImage />
@@ -32,7 +32,7 @@ export default function RootLayout({
 						</main>
 						<Footer />
 					</NextThemesProvider>
-				</NextuiProvider>
+				</HerouiProvider>
 			</body>
 		</html>
 	);

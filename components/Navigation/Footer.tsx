@@ -2,7 +2,7 @@
 
 import type { IconProps } from '@iconify/react';
 
-import { Link, Spacer } from '@nextui-org/react';
+import { Link, Spacer } from '@heroui/react';
 import { Icon } from '@iconify/react';
 import { ScrollingSponsors } from '../ScrollingSponsors/ScrollingSponsors';
 
