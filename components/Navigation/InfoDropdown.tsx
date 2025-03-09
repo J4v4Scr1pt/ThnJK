@@ -43,12 +43,7 @@ export function InfoDropdown() {
 					</Button>
 				</DropdownTrigger>
 			</NavbarItem>
-			<DropdownMenu
-				aria-label="ThnJkInfo"
-				className="w-[340px]"
-				itemClasses={{
-					base: 'gap-4',
-				}}>
+			<DropdownMenu aria-label="ThnJkInfo">
 				<DropdownItem
 					as={Link}
 					key="about"
