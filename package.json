@@ -1,55 +1,55 @@
 {
-  "name": "thn-jk",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "preinstall": "npx only-allow pnpm",
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "ts-lint": "npx tsc",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "@heroui/react": "2.7.4",
-    "@iconify/react": "^5.2.0",
-    "@internationalized/date": "3.7.0",
-    "canvas-confetti": "^1.9.3",
-    "framer-motion": "12.4.10",
-    "lenis": "^1.2.0",
-    "mini-svg-data-uri": "^1.4.4",
-    "next": "15.2.1",
-    "next-themes": "^0.4.4",
-    "react": "19.0.0",
-    "react-dom": "19.0.0",
-    "zod": "^3.24.2"
-  },
-  "devDependencies": {
-    "@eslint/eslintrc": "3.3.0",
-    "@next/bundle-analyzer": "15.2.1",
-    "@types/canvas-confetti": "^1.9.0",
-    "@types/node": "22.13.9",
-    "@types/react": "19.0.10",
-    "@types/react-dom": "19.0.4",
-    "autoprefixer": "10.4.20",
-    "cross-env": "^7.0.3",
-    "eslint": "9.21.0",
-    "eslint-config-next": "15.2.1",
-    "eslint-config-prettier": "^10.0.2",
-    "postcss": "8.5.3",
-    "prettier": "3.5.3",
-    "prettier-plugin-tailwindcss": "^0.6.11",
-    "tailwindcss": "3.4.17",
-    "typescript": "5.8.2"
-  },
-  "overrides": {
-    "@types/react": "19.0.10",
-    "@types/react-dom": "19.0.4"
-  },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "@heroui/shared-utils",
-      "sharp"
-    ]
-  }
+	"name": "thn-jk",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"preinstall": "npx only-allow pnpm",
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"ts-lint": "npx tsc",
+		"lint": "next lint"
+	},
+	"dependencies": {
+		"@heroui/react": "2.7.5",
+		"@iconify/react": "^5.2.0",
+		"@internationalized/date": "3.7.0",
+		"canvas-confetti": "^1.9.3",
+		"framer-motion": "12.4.10",
+		"lenis": "^1.2.3",
+		"mini-svg-data-uri": "^1.4.4",
+		"next": "15.2.1",
+		"next-themes": "^0.4.4",
+		"react": "19.0.0",
+		"react-dom": "19.0.0",
+		"zod": "^3.24.2"
+	},
+	"devDependencies": {
+		"@eslint/eslintrc": "3.3.0",
+		"@next/bundle-analyzer": "15.2.1",
+		"@types/canvas-confetti": "^1.9.0",
+		"@types/node": "22.13.10",
+		"@types/react": "19.0.10",
+		"@types/react-dom": "19.0.4",
+		"autoprefixer": "10.4.21",
+		"cross-env": "^7.0.3",
+		"eslint": "9.22.0",
+		"eslint-config-next": "15.2.1",
+		"eslint-config-prettier": "^10.1.1",
+		"postcss": "8.5.3",
+		"prettier": "3.5.3",
+		"prettier-plugin-tailwindcss": "^0.6.11",
+		"tailwindcss": "3.4.17",
+		"typescript": "5.8.2"
+	},
+	"overrides": {
+		"@types/react": "19.0.10",
+		"@types/react-dom": "19.0.4"
+	},
+	"pnpm": {
+		"onlyBuiltDependencies": [
+			"@heroui/shared-utils",
+			"sharp"
+		]
+	}
 }
